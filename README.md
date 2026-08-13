@@ -13,8 +13,8 @@ Static storefront served via **GitHub Pages** from the `TSLABoT` branch (default
 | Product | Price | Notes |
 |---------|-------|--------|
 | **Email2Report** | Kit **£149**, Guided **£199** | Hero product. Public shop name; unlock flow uses [PrefillFromMail](https://cyberbob4269.github.io/prefillfrommail/). After Stripe payment: unlock page → paste license key → run on a real scheduled email. |
-| **xTalk** | from **£9.99** | Windows dictation. Installer: [xTalk-Setup.exe (v1.0.3)](https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe) |
-| **Food Truth** | **£3.99** | UK supermarket buy/avoid guide. Free staples at [food-truth](https://cyberbob4269.github.io/food-truth/). |
+| **xTalk** | from **£9.99** | Windows dictation — full product card with UK Launch / UK Full / US tiers. Installer: [xTalk-Setup.exe (v1.0.3)](https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe) |
+| **Food Truth** | **£3.99** | UK supermarket buy/avoid guide. Free staples at [food-truth](https://cyberbob4269.github.io/food-truth/); unlock full guide after Stripe checkout. |
 
 Done-for-you Email2Report is **not** listed on the shop.
 
