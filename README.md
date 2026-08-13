@@ -27,7 +27,7 @@ After pointing `netwrxsolutions.com` at this site, uncomment Cloudflare Web Anal
 
 - `index.html` — main shop page
 - `essay-light-speed-tsunami.html` — essay
-- `images/` — product and project artwork
+- `images/` — product and project artwork (`email2report.jpg` from `ops/assets/pfm-v-problem-linkedin.jpg`)
 - `projects.md` — supplementary project notes
 
 ## Owner
