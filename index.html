@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetwrxSolutions | Networks • AI Infrastructure • Custom Software • Science Platforms</title>
+    <meta name="description" content="Buy Email2Report, xTalk, and Food Truth from Skunk Foundry — software by NetwrxSolutions Ltd, Dundee, Scotland.">
+    <title>NetwrxSolutions | Skunk Foundry Software Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -29,19 +30,18 @@
             letter-spacing: -0.025em;
         }
 
-        .service-card {
+        .service-card,
+        .product-card,
+        .project-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-        .service-card:hover {
+        .service-card:hover,
+        .product-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
 
-        .project-card {
-            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
-        }
-        
         .project-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -70,11 +70,30 @@
 
         .x-card:hover {
             border-color: #1d9bf0;
-            transform: translateY(-2px);
         }
 
-        .stat-number {
-            font-variant-numeric: tabular-nums;
+        .buy-btn {
+            transition: all 0.2s ease;
+        }
+
+        .buy-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px -8px rgb(29 155 240 / 0.45);
+        }
+
+        .price-tier {
+            border: 1px solid #2f3336;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .price-tier:hover {
+            border-color: #1d9bf0;
+            background-color: rgb(29 155 240 / 0.05);
+        }
+
+        .price-tier.featured {
+            border-color: #1d9bf0;
+            background-color: rgb(29 155 240 / 0.08);
         }
     </style>
 </head>
@@ -84,29 +103,32 @@
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 bg-black border border-yellow-500 rounded-xl flex items-center justify-center shadow-inner">
-                    <span class="text-yellow-400 font-bold text-xl tracking-[1px]">AI</span>
+                    <span class="text-yellow-400 font-bold text-xl tracking-[1px]">SF</span>
                 </div>
                 <div>
                     <span class="font-display text-2xl font-semibold tracking-tight">NetwrxSolutions</span>
+                    <div class="text-[10px] uppercase tracking-[2px] text-slate-500 -mt-0.5">Skunk Foundry</div>
                 </div>
             </div>
             
             <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#shop" class="nav-link text-slate-300 hover:text-white">Shop</a>
+                <a href="#citizen-science" class="nav-link text-slate-300 hover:text-white">Citizen Science</a>
                 <a href="#services" class="nav-link text-slate-300 hover:text-white">Services</a>
                 <a href="#projects" class="nav-link text-slate-300 hover:text-white">Projects</a>
-                <a href="#updates" class="nav-link text-slate-300 hover:text-white">Updates</a>
                 <a href="#about" class="nav-link text-slate-300 hover:text-white">About</a>
             </div>
             
             <div class="flex items-center gap-x-3">
-                <a href="#contact" 
+                <a href="#shop" 
                    class="px-5 py-2.5 text-sm font-semibold bg-white text-slate-900 rounded-2xl hover:bg-slate-100 transition-colors flex items-center gap-x-2">
-                    <span>Get Quote</span>
+                    <i class="fas fa-shopping-bag text-xs"></i>
+                    <span>Shop Now</span>
                 </a>
-                <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })" 
-                        class="hidden md:block px-4 py-2.5 text-sm font-medium border border-slate-700 hover:bg-slate-800 rounded-2xl transition-colors">
-                    Explore Projects
-                </button>
+                <a href="#contact" 
+                   class="hidden md:flex px-4 py-2.5 text-sm font-medium border border-slate-700 hover:bg-slate-800 rounded-2xl transition-colors">
+                    Contact
+                </a>
             </div>
         </div>
     </nav>
@@ -116,363 +138,403 @@
         <div class="max-w-5xl mx-auto px-6 text-center">
             <div class="inline-flex items-center gap-x-2 bg-slate-800 border border-slate-700 rounded-full px-4 py-1.5 mb-6 text-sm">
                 <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                <span class="font-medium text-emerald-400">Scotland • UK &amp; Europe • 25+ Years</span>
+                <span class="font-medium text-emerald-400">Skunk Foundry • Dundee, Scotland</span>
             </div>
             
-            <h1 class="font-display text-6xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
-                Networks.<br>
-                <span class="accent">AI Infrastructure.</span><br>
-                Custom Software.<br>
-                <span class="text-slate-400">Science Platforms.</span>
+            <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
+                Software that<br>
+                <span class="accent">works in the real world.</span>
             </h1>
             
             <p class="max-w-2xl mx-auto text-xl text-slate-300 mb-10">
-                Infrastructure installation, on-prem AI deployment, automation agents, and cutting-edge science platforms 
-                engineered for real results. Built by Scott Kellock.
+                Buy ready-to-run tools from <strong class="text-white font-medium">Skunk Foundry</strong> — automation, voice input, and food intelligence.
+                Built by Scott Kellock at NetwrxSolutions Ltd.
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#contact" 
+                <a href="#shop" 
                    class="px-8 py-4 text-lg font-semibold bg-white text-slate-900 rounded-3xl hover:bg-slate-100 transition-all flex items-center justify-center gap-x-3 shadow-xl shadow-sky-500/20">
-                    <span>Get a Quote</span>
+                    <span>Browse Products</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })" 
-                        class="px-8 py-4 text-lg font-semibold border border-slate-600 hover:bg-slate-800 rounded-3xl transition-all flex items-center justify-center gap-x-3">
-                    <span>Browse Projects</span>
-                </button>
+                <a href="#contact" 
+                   class="px-8 py-4 text-lg font-semibold border border-slate-600 hover:bg-slate-800 rounded-3xl transition-all flex items-center justify-center gap-x-3">
+                    <span>Custom Work &amp; Quotes</span>
+                </a>
             </div>
             
-            <div class="mt-12 flex justify-center gap-x-8 text-sm text-slate-400">
+            <div class="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-slate-400">
                 <div class="flex items-center gap-x-2">
-                    <i class="fas fa-check text-emerald-400"></i>
-                    <span>Production-grade</span>
+                    <i class="fas fa-lock text-emerald-400"></i>
+                    <span>Secure checkout via Stripe</span>
                 </div>
                 <div class="flex items-center gap-x-2">
-                    <i class="fas fa-check text-emerald-400"></i>
-                    <span>Research-backed</span>
+                    <i class="fas fa-bolt text-emerald-400"></i>
+                    <span>Instant access after payment</span>
                 </div>
                 <div class="flex items-center gap-x-2">
-                    <i class="fas fa-check text-emerald-400"></i>
-                    <span>Future-proof</span>
+                    <i class="fas fa-envelope text-emerald-400"></i>
+                    <span>scott@netwrxsolutions.com</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Trust / Stats Bar -->
-    <div class="border-b border-slate-800 bg-slate-900 py-6">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-                <div class="text-3xl font-semibold text-white">25+</div>
-                <div class="text-sm text-slate-400 mt-1">Years Experience</div>
+    <!-- Shop Section -->
+    <section id="shop" class="bg-slate-900 border-t border-slate-800 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">SKUNK FOUNDRY SHOP</div>
+                <h2 class="section-header">Buy Software</h2>
+                <p class="mt-4 max-w-lg mx-auto text-slate-400">Live products with real prices. Click a tier to pay securely with Stripe — you'll get access details right after checkout.</p>
             </div>
-            <div>
-                <div class="text-3xl font-semibold text-white">UK &amp; Europe</div>
-                <div class="text-sm text-slate-400 mt-1">Full Coverage</div>
-            </div>
-            <div>
-                <div class="text-3xl font-semibold text-white">10+</div>
-                <div class="text-sm text-slate-400 mt-1">Active Platforms &amp; Tools</div>
-            </div>
-            <div>
-                <div class="text-3xl font-semibold text-white">Real Impact</div>
-                <div class="text-sm text-slate-400 mt-1">Citizen Science to Enterprise</div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Services Section -->
-    <section id="services" class="max-w-7xl mx-auto px-6 py-20">
+            <div class="space-y-10">
+
+                <!-- Email2Report -->
+                <article class="product-card x-card border rounded-3xl p-8 md:p-10">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-2/5">
+                            <div class="w-full h-48 md:h-56 bg-gradient-to-br from-sky-500/20 to-blue-900/30 rounded-2xl flex items-center justify-center border border-slate-700">
+                                <div class="text-center">
+                                    <i class="fas fa-envelope-open-text text-5xl text-sky-400 mb-3"></i>
+                                    <div class="text-sm text-slate-400">Email → Report automation</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/5">
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                <span class="px-3 py-1 bg-sky-500/10 text-sky-400 text-xs font-medium rounded-full">Automation</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Also: PrefillFromMail</span>
+                            </div>
+                            <h3 class="font-display text-3xl font-semibold mb-3">Email2Report</h3>
+                            <p class="text-slate-300 mb-4 leading-relaxed">
+                                Schedule an email in Gmail and get a job report or SafetyCulture inspection with headers filled in —
+                                about <strong class="text-white">24 hours before</strong> the job, running in <strong class="text-white">your own Google account</strong>.
+                                No third-party data hosting.
+                            </p>
+                            <p class="text-sm text-slate-500 mb-6">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                Requires <strong class="text-slate-400">SafetyCulture Premium or Enterprise</strong> plus Gmail.
+                            </p>
+
+                            <div class="grid sm:grid-cols-2 gap-3 mb-6 max-w-lg">
+                                <a href="https://buy.stripe.com/4gMeVdcTIbk17tM3vabo404" target="_blank" rel="noopener"
+                                   class="price-tier rounded-2xl p-4 text-center buy-btn block">
+                                    <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Kit</div>
+                                    <div class="text-2xl font-semibold text-white">£149</div>
+                                    <div class="text-xs text-slate-400 mt-1">Self-install templates</div>
+                                </a>
+                                <a href="https://buy.stripe.com/14AeVd06W5ZHaFYe9Obo405" target="_blank" rel="noopener"
+                                   class="price-tier featured rounded-2xl p-4 text-center buy-btn block">
+                                    <div class="text-xs uppercase tracking-wider text-sky-400 mb-1">Guided</div>
+                                    <div class="text-2xl font-semibold text-white">£199</div>
+                                    <div class="text-xs text-slate-400 mt-1">Setup walkthrough</div>
+                                </a>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-4 text-sm">
+                                <a href="https://cyberbob4269.github.io/prefillfrommail/" target="_blank" rel="noopener"
+                                   class="text-sky-400 hover:text-sky-300 font-medium">
+                                    <i class="fas fa-unlock-alt mr-1"></i> After payment — unlock &amp; setup guide
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- xTalk -->
+                <article class="product-card x-card border rounded-3xl p-8 md:p-10">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-2/5">
+                            <img src="images/xtalk.jpg" alt="xTalk — Talk to Your Computer" class="w-full rounded-2xl object-cover shadow-lg border border-slate-700" style="max-height: 280px;">
+                        </div>
+                        <div class="lg:w-3/5">
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-medium rounded-full">Windows</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Voice → Text</span>
+                            </div>
+                            <h3 class="font-display text-3xl font-semibold mb-1">xTalk</h3>
+                            <p class="text-sm text-slate-500 mb-3">Talk to Your Computer</p>
+                            <p class="text-slate-300 mb-4 leading-relaxed">
+                                Speak and have text appear at your cursor — anywhere on Windows. Bring your own xAI API key (BYOK).
+                                Low-latency dictation for developers, writers, and anyone who thinks faster than they type.
+                            </p>
+                            <p class="text-xs text-slate-500 mb-6">
+                                Not affiliated with xAI or SpaceX. Windows SmartScreen may show "Unknown publisher" on first install — this is expected for independent software.
+                            </p>
+
+                            <div class="grid sm:grid-cols-3 gap-3 mb-6">
+                                <a href="https://buy.stripe.com/fZu9ATcTI87PbK26Hmbo401" target="_blank" rel="noopener"
+                                   class="price-tier featured rounded-2xl p-4 text-center buy-btn block">
+                                    <div class="text-xs uppercase tracking-wider text-purple-400 mb-1">UK Launch</div>
+                                    <div class="text-2xl font-semibold text-white">£9.99</div>
+                                </a>
+                                <a href="https://buy.stripe.com/8x26oHg5U0Fn6pI8Pubo400" target="_blank" rel="noopener"
+                                   class="price-tier rounded-2xl p-4 text-center buy-btn block">
+                                    <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">UK Full</div>
+                                    <div class="text-2xl font-semibold text-white">£14.99</div>
+                                </a>
+                                <a href="https://buy.stripe.com/8x26oHg5U5ZH4hAfdSbo402" target="_blank" rel="noopener"
+                                   class="price-tier rounded-2xl p-4 text-center buy-btn block">
+                                    <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">US</div>
+                                    <div class="text-2xl font-semibold text-white">$9.99</div>
+                                </a>
+                            </div>
+
+                            <a href="https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe" target="_blank" rel="noopener"
+                               class="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded-2xl text-sm font-medium hover:bg-purple-500/30 transition-colors">
+                                <i class="fas fa-download"></i>
+                                Download installer (v1.0.3)
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Truth -->
+                <article class="product-card x-card border rounded-3xl p-8 md:p-10">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-2/5">
+                            <img src="images/foodtruth.jpg" alt="Food Truth app" class="w-full rounded-2xl object-cover shadow-lg border border-slate-700" style="max-height: 280px;">
+                        </div>
+                        <div class="lg:w-3/5">
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                <span class="px-3 py-1 bg-lime-500/10 text-lime-400 text-xs font-medium rounded-full">UK Supermarkets</span>
+                                <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Buy / Avoid Guide</span>
+                            </div>
+                            <h3 class="font-display text-3xl font-semibold mb-3">Food Truth</h3>
+                            <p class="text-slate-300 mb-4 leading-relaxed">
+                                A practical UK supermarket buy/avoid guide. Staples like eggs, butter, milk, bread, and cheddar are free —
+                                unlock the full guide for everything else.
+                            </p>
+                            <p class="text-xs text-slate-500 mb-6">
+                                Informational guide only — not medical advice.
+                            </p>
+
+                            <div class="flex flex-wrap items-center gap-4 mb-4">
+                                <a href="https://buy.stripe.com/aFadR95rg2NvdSac1Gbo403" target="_blank" rel="noopener"
+                                   class="buy-btn inline-flex items-center gap-2 px-8 py-4 bg-lime-500 text-slate-900 font-semibold rounded-2xl hover:bg-lime-400 transition-colors text-lg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Buy full guide — £3.99
+                                </a>
+                                <a href="https://cyberbob4269.github.io/food-truth/" target="_blank" rel="noopener"
+                                   class="text-lime-400 hover:text-lime-300 font-medium text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i> Try free staples in the app
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="mt-10 text-center text-xs text-slate-500">
+                Sold by <strong class="text-slate-400">NETWRXSOLUTIONS LIMITED</strong> (Dundee, Scotland) • Payments processed securely by Stripe
+            </p>
+        </div>
+    </section>
+
+    <!-- Citizen Science (Free) -->
+    <section id="citizen-science" class="max-w-7xl mx-auto px-6 py-20">
         <div class="text-center mb-12">
-            <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">WHAT WE DELIVER</div>
-            <h2 class="section-header">Infrastructure, Intelligence &amp; Innovation</h2>
-            <p class="mt-4 max-w-md mx-auto text-slate-400">From rock-solid networks to frontier science platforms — everything engineered to work in the real world.</p>
+            <div class="inline-block px-4 py-1.5 bg-slate-800 text-emerald-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">FREE &amp; OPEN</div>
+            <h2 class="section-header">Citizen Science</h2>
+            <p class="mt-4 max-w-md mx-auto text-slate-400">Astronomy platforms built for real discovery — free to use. Optional donation appreciated.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- Network & Infrastructure -->
-            <div class="service-card x-card rounded-3xl p-8">
-                <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-network-wired text-3xl"></i>
+            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
+                <img src="images/cosmic-pulse-orbit.png" alt="Cosmic Pulse orbit visualization" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 200px;">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-full">Free</div>
+                    <i class="fas fa-globe text-emerald-400"></i>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">Network &amp; Infrastructure</h3>
-                <p class="text-slate-400 mb-6">Full site rollouts, fiber, Wi-Fi 7, Cisco, EPoS/ATM installs across the UK &amp; Europe. Reliable, scalable, production-ready.</p>
-                <div class="text-xs uppercase tracking-widest text-slate-500 font-medium">Core Strength</div>
+                <h4 class="font-semibold text-xl mb-2">Vera@Home / Cosmic Pulse</h4>
+                <p class="text-slate-400 text-sm flex-1">LSST broker ingest, real-time dashboard, and Deep Space 3D visualization. Community-driven astronomy infrastructure.</p>
+                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <span class="text-emerald-400 font-medium">Open source</span>
+                    <a href="https://github.com/cyberbob4269/vera-home-local" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
+                </div>
             </div>
 
-            <!-- AI Infrastructure -->
-            <div class="service-card x-card rounded-3xl p-8">
-                <div class="w-12 h-12 bg-violet-500/10 text-violet-400 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-robot text-3xl"></i>
+            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
+                <img src="images/lsst-live.png" alt="LSST Live" class="w-full rounded-2xl mb-4 object-contain bg-black p-4 shadow-lg" style="max-height: 180px;">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="px-3 py-1 bg-sky-500/10 text-sky-400 text-xs font-medium rounded-full">Free</div>
+                    <i class="fas fa-satellite text-sky-400"></i>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">AI Infrastructure &amp; Integration</h3>
-                <p class="text-slate-400 mb-6">Local LLMs, on-prem AI deployment, automation agents, edge computing. Private, secure, high-performance systems tailored to your environment.</p>
-                <div class="text-xs uppercase tracking-widest text-slate-500 font-medium">Modern Core</div>
+                <h4 class="font-semibold text-xl mb-2">LSST Live</h4>
+                <p class="text-slate-400 text-sm flex-1">Family-friendly astronomy experience for the LSST era — terms, privacy, and public-facing tools.</p>
+                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <span class="text-sky-400 font-medium">Public</span>
+                    <a href="https://github.com/cyberbob4269/lsst-live-site" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
+                </div>
             </div>
 
-            <!-- Custom Software -->
-            <div class="service-card x-card rounded-3xl p-8">
-                <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-code text-3xl"></i>
+            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
+                <img src="images/tess-neighborhood.png" alt="Neo-Watch TESS visualization" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 200px;">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="px-3 py-1 bg-indigo-500/10 text-indigo-400 text-xs font-medium rounded-full">Free</div>
+                    <i class="fas fa-meteor text-indigo-400"></i>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">Custom Software &amp; Automation</h3>
-                <p class="text-slate-400 mb-6">Python tooling, workflow automation, GitHub Copilot-powered apps, reusable skills and connectors. Built for maintainability and scale.</p>
-                <div class="text-xs uppercase tracking-widest text-slate-500 font-medium">Delivery Engine</div>
+                <h4 class="font-semibold text-xl mb-2">Neo-Watch</h4>
+                <p class="text-slate-400 text-sm flex-1">Daily Near-Earth Object reports with images, designed to integrate with Cosmic Pulse.</p>
+                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <span class="text-indigo-400 font-medium">Public</span>
+                    <a href="https://github.com/cyberbob4269/neo-watch" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <p class="text-slate-400 text-sm mb-4">Enjoy the citizen-science work? Optional donation helps keep servers running.</p>
+            <a href="https://monzo.com/pay/r/netwrxsolutions-limited_At12CO7NiFTnlo" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">
+                <i class="fas fa-heart text-rose-400"></i>
+                Donate via Monzo (optional)
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-slate-900 border-t border-slate-800 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">CONSULTING</div>
+                <h2 class="section-header">Infrastructure, Intelligence &amp; Innovation</h2>
+                <p class="mt-4 max-w-md mx-auto text-slate-400">Need something bespoke? Custom networks, AI deployment, and science platforms — engineered for production.</p>
             </div>
 
-            <!-- Science Platforms (NEW) -->
-            <div class="service-card x-card rounded-3xl p-8">
-                <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-globe text-3xl"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card x-card border rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Network &amp; Infrastructure</h3>
+                    <p class="text-slate-400 mb-6">Full site rollouts, fiber, Wi-Fi, Cisco, EPoS/ATM installs across the UK &amp; Europe.</p>
                 </div>
-                <h3 class="text-2xl font-semibold mb-3">Science Platforms &amp; Citizen Science</h3>
-                <p class="text-slate-400 mb-6">Cosmic Pulse / Vera@Home — LSST data ingest, dashboards, 3D visualization, and community-driven astronomy tools. Real research infrastructure for real discovery.</p>
-                <div class="text-xs uppercase tracking-widest text-amber-400 font-medium">Frontier Work</div>
+
+                <div class="service-card x-card border rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-violet-500/10 text-violet-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">AI Infrastructure</h3>
+                    <p class="text-slate-400 mb-6">Local LLMs, on-prem AI deployment, automation agents, and edge computing.</p>
+                </div>
+
+                <div class="service-card x-card border rounded-3xl p-8">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Custom Software</h3>
+                    <p class="text-slate-400 mb-6">Python tooling, workflow automation, and production-ready connectors.</p>
+                </div>
             </div>
 
-            <!-- Research Tools (NEW) -->
-            <div class="service-card x-card rounded-3xl p-8">
-                <div class="w-12 h-12 bg-rose-500/10 text-rose-400 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-flask text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-semibold mb-3">Research Tools &amp; Knowledge Systems</h3>
-                <p class="text-slate-400 mb-6">Peptide Research Hub with documentation, calculators, protocols, and bi-weekly research reports. Structured knowledge systems for serious scientific work.</p>
-                <div class="text-xs uppercase tracking-widest text-rose-400 font-medium">Knowledge Layer</div>
-            </div>
-
-            <!-- Advanced AI Systems (NEW) -->
-            <div class="service-card x-card rounded-3xl p-8">
-                <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-microchip text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-semibold mb-3">Advanced AI Systems (MCP)</h3>
-                <p class="text-slate-400 mb-6">xai-mcp-server: Unified FastAPI platform with Grok integration, X search, voice agents, image tools, and connected services. The control plane for intelligent systems.</p>
-                <div class="text-xs uppercase tracking-widest text-cyan-400 font-medium">Intelligence Layer</div>
+            <div class="mt-10 text-center">
+                <a href="#contact" class="inline-flex items-center px-6 py-3 text-sm font-medium bg-white text-slate-900 rounded-2xl hover:bg-slate-100 transition-colors">
+                    Request a quote <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Featured Projects Section -->
-    <section id="projects" class="bg-slate-900 py-20 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
-                <div>
-                    <div class="text-sky-400 text-sm font-semibold tracking-[2px]">SHOWCASE</div>
-                    <h2 class="section-header mt-2">Featured Projects &amp; Platforms</h2>
-                </div>
-                <a href="https://github.com/cyberbob4269" target="_blank" 
-                   class="mt-4 md:mt-0 inline-flex items-center text-sm font-medium text-sky-400 hover:text-sky-300 transition-colors">
-                    View all on GitHub <i class="fas fa-external-link-alt ml-2 text-xs"></i>
-                </a>
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-800">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+            <div>
+                <div class="text-sky-400 text-sm font-semibold tracking-[2px]">PORTFOLIO</div>
+                <h2 class="section-header mt-2">More Projects</h2>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Vera@Home / Cosmic Pulse -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <img src="images/cosmic-pulse-orbit.png" alt="Cosmic Pulse Orbit Visualization" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 200px;">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-full">Citizen Science</div>
-                        <i class="fas fa-globe text-emerald-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">Vera@Home / Cosmic Pulse</h4>
-                    <p class="text-slate-400 text-sm flex-1">Canonical LSST broker ingest, SQLite, SSE, real-time dashboard + Deep Space 3D visualization. The heart of citizen-driven astronomy.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-emerald-400 font-medium">Active • Python</span>
-                        <a href="https://github.com/cyberbob4269/vera-home-local" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Peptide Research Hub -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-rose-500/10 text-rose-400 text-xs font-medium rounded-full">Research</div>
-                        <i class="fas fa-flask text-rose-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">Peptide Research Hub</h4>
-                    <p class="text-slate-400 text-sm flex-1">Private research repository: documentation, reconstitution calculators, experiment templates, literature notes, protocol frameworks + bi-weekly research reports on latest peptide science.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-rose-400 font-medium">Active • Private</span>
-                        <a href="https://github.com/cyberbob4269/peptide-research-hub" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- xai-mcp-server -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-medium rounded-full">AI Platform</div>
-                        <i class="fas fa-microchip text-cyan-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">xai-mcp-server</h4>
-                    <p class="text-slate-400 text-sm flex-1">Unified FastAPI Master Control Program server with Grok, advanced X search, voice agent, image tools, and connected services integration. The intelligent backbone.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-cyan-400 font-medium">Active • Private</span>
-                        <a href="https://github.com/cyberbob4269/xai-mcp-server" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Xtalk (New) -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <img src="images/xtalk.jpg" alt="xTalk Product Box" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 220px;">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-medium rounded-full">NEW • X Integration</div>
-                        <i class="fas fa-comments text-purple-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">Xtalk</h4>
-                    <p class="text-slate-400 text-sm flex-1">Advanced X (Twitter) integrated voice dialogue and talk system. Low-latency, interruptible, human-like speech interaction powered by the MCP platform. (Repo recently uploaded — details coming soon.)</p>
-                    <div class="mt-5 pt-5 border-t border-slate-700 flex items-center justify-between text-xs">
-                        <span class="text-purple-400 font-medium">In Development</span>
-                        <span class="text-slate-500">Coming soon</span>
-                    </div>
-                </div>
-
-                <!-- Automation Skills -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-orange-500/10 text-orange-400 text-xs font-medium rounded-full">Automation</div>
-                        <i class="fas fa-cogs text-orange-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">Automation Skills</h4>
-                    <p class="text-slate-400 text-sm flex-1">Reusable automation skills and workflows. Personal connectors and production-ready tools for reliable, repeatable processes.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-orange-400 font-medium">Active • Private</span>
-                        <a href="https://github.com/cyberbob4269/automation-skills" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Food Truth -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <img src="images/foodtruth.jpg" alt="FoodTruth App Screenshot" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 220px;">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-lime-500/10 text-lime-400 text-xs font-medium rounded-full">Intelligence</div>
-                        <i class="fas fa-chart-line text-lime-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">Food Truth</h4>
-                    <p class="text-slate-400 text-sm flex-1">UK supermarket food intelligence platform (freemium). Transparent data and insights for consumers and the food system.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-lime-400 font-medium">Active • Public</span>
-                        <a href="https://github.com/cyberbob4269/food-truth" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- LSST Live Site -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <img src="images/lsst-live.png" alt="LSST Live Logo" class="w-full rounded-2xl mb-4 object-contain bg-black p-4 shadow-lg" style="max-height: 180px;">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-sky-500/10 text-sky-400 text-xs font-medium rounded-full">Astronomy</div>
-                        <i class="fas fa-satellite text-sky-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">LSST Live Site</h4>
-                    <p class="text-slate-400 text-sm flex-1">Family-friendly astronomy experience. Terms, privacy, and public-facing tools for the LSST era.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-sky-400 font-medium">Active • Public</span>
-                        <a href="https://github.com/cyberbob4269/lsst-live-site" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Neo-Watch -->
-                <div class="project-card x-card rounded-3xl p-7 flex flex-col">
-                    <img src="images/tess-neighborhood.png" alt="TESS Neighborhood Lab Visualization" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 200px;">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="px-3 py-1 bg-indigo-500/10 text-indigo-400 text-xs font-medium rounded-full">Astronomy</div>
-                        <i class="fas fa-meteor text-indigo-400"></i>
-                    </div>
-                    <h4 class="font-semibold text-xl mb-2">Neo-Watch</h4>
-                    <p class="text-slate-400 text-sm flex-1">Daily Near-Earth Object (NEO) reports with images. Designed for seamless integration with Cosmic Pulse.</p>
-                    <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                        <span class="text-indigo-400 font-medium">Active • Public</span>
-                        <a href="https://github.com/cyberbob4269/neo-watch" target="_blank" class="font-medium hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="mt-8 text-center">
-                <a href="https://github.com/cyberbob4269?tab=repositories" target="_blank" 
-                   class="inline-flex items-center px-6 py-3 text-sm font-medium border border-slate-700 hover:bg-slate-800 rounded-2xl transition-colors">
-                    <span>View all repositories on GitHub</span> 
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
+            <a href="https://github.com/cyberbob4269" target="_blank" rel="noopener"
+               class="mt-4 md:mt-0 inline-flex items-center text-sm font-medium text-sky-400 hover:text-sky-300 transition-colors">
+                View all on GitHub <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+            </a>
         </div>
-    </section>
 
-    <!-- Latest Updates / Reports -->
-    <section id="updates" class="max-w-5xl mx-auto px-6 py-20">
-        <div class="text-center mb-10">
-            <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">STAY CURRENT</div>
-            <h2 class="section-header">Latest Research &amp; Platform Updates</h2>
-            <p class="mt-3 text-slate-400 max-w-md mx-auto">Bi-weekly peptide science reports, Cosmic Pulse progress, and platform news — delivered directly.</p>
-        </div>
-        
-        <div class="x-card rounded-3xl p-8 md:p-10">
-            <div class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="flex-1">
-                    <div class="uppercase text-xs tracking-[1.5px] text-sky-400 font-semibold mb-2">PEPTIDE RESEARCH REPORTS</div>
-                    <h3 class="text-2xl font-semibold mb-3">Bi-Weekly Research Briefs</h3>
-                    <p class="text-slate-400">Fresh synthesis of the latest peptide science talks, regulatory developments (e.g. FDA PCAC), community discussions, and practical insights. Delivered to your inbox.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="px-3 py-1 bg-rose-500/10 text-rose-400 text-xs font-medium rounded-full">Research</div>
+                    <i class="fas fa-flask text-rose-400"></i>
                 </div>
-                <div>
-                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 bg-white text-slate-900 font-semibold rounded-2xl hover:bg-slate-100 transition-colors text-sm">
-                        Subscribe to Reports
-                    </a>
-                    <p class="text-[10px] text-center text-slate-500 mt-2">Research use only</p>
+                <h4 class="font-semibold text-xl mb-2">Peptide Research Hub</h4>
+                <p class="text-slate-400 text-sm flex-1">Documentation, calculators, experiment templates, and bi-weekly research reports.</p>
+                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <span class="text-rose-400 font-medium">Private</span>
+                    <a href="https://github.com/cyberbob4269/peptide-research-hub" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
+                </div>
+            </div>
+
+            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-medium rounded-full">AI Platform</div>
+                    <i class="fas fa-microchip text-cyan-400"></i>
+                </div>
+                <h4 class="font-semibold text-xl mb-2">xai-mcp-server</h4>
+                <p class="text-slate-400 text-sm flex-1">Unified FastAPI MCP server with Grok, X search, voice agents, and connected services.</p>
+                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <span class="text-cyan-400 font-medium">Private</span>
+                    <a href="https://github.com/cyberbob4269/xai-mcp-server" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
+                </div>
+            </div>
+
+            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="px-3 py-1 bg-orange-500/10 text-orange-400 text-xs font-medium rounded-full">Automation</div>
+                    <i class="fas fa-cogs text-orange-400"></i>
+                </div>
+                <h4 class="font-semibold text-xl mb-2">Automation Skills</h4>
+                <p class="text-slate-400 text-sm flex-1">Reusable automation skills and workflows for reliable, repeatable processes.</p>
+                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
+                    <span class="text-orange-400 font-medium">Private</span>
+                    <a href="https://github.com/cyberbob4269/automation-skills" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About / Closing -->
+    <!-- About -->
     <section id="about" class="border-t border-slate-800 bg-slate-900 py-16">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="section-header mb-6">Built with intention in Scotland</h2>
             <p class="text-lg text-slate-300 max-w-2xl mx-auto">
-                NetwrxSolutions is the practical delivery layer for ambitious work in networks, AI, automation, and science platforms. 
-                From reliable infrastructure to frontier research tools — everything is engineered to create real, lasting impact.
+                <strong class="text-white">NetwrxSolutions Ltd</strong> is the company. <strong class="text-white">Skunk Foundry</strong> is the software brand.
+                From sellable tools to citizen-science platforms and enterprise infrastructure — everything is engineered for real-world use.
             </p>
-            
-            <div class="mt-10 flex justify-center">
-                <div class="inline-flex items-center gap-x-4 text-sm">
-                    <div class="flex -space-x-2">
-                        <div class="w-8 h-8 bg-slate-700 rounded-full border-2 border-slate-900"></div>
-                        <div class="w-8 h-8 bg-slate-700 rounded-full border-2 border-slate-900"></div>
-                        <div class="w-8 h-8 bg-slate-700 rounded-full border-2 border-slate-900"></div>
-                    </div>
-                    <span class="text-slate-400">Scott Kellock &amp; collaborators</span>
-                </div>
-            </div>
+            <p class="mt-4 text-slate-400">Scott Kellock — Dundee, Scotland — serving UK &amp; Europe</p>
         </div>
     </section>
 
-    <!-- Contact / CTA -->
+    <!-- Contact -->
     <section id="contact" class="max-w-3xl mx-auto px-6 py-20 text-center">
-        <h2 class="section-header mb-4">Ready to build something real?</h2>
-        <p class="text-xl text-slate-300 mb-8">Whether you need robust infrastructure, custom AI systems, or collaboration on science platforms — let's talk.</p>
+        <h2 class="section-header mb-4">Questions before you buy?</h2>
+        <p class="text-xl text-slate-300 mb-8">Product support, custom development, or infrastructure quotes — get in touch.</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:cyberryde@gmail.com" 
+            <a href="mailto:scott@netwrxsolutions.com" 
                class="px-8 py-4 bg-white text-slate-900 font-semibold rounded-3xl hover:bg-slate-100 transition-all inline-flex items-center justify-center gap-x-3 text-lg">
                 <i class="fas fa-envelope"></i>
-                <span>Email Scott</span>
+                <span>scott@netwrxsolutions.com</span>
             </a>
-            <a href="https://github.com/cyberbob4269" target="_blank" 
+            <a href="https://github.com/cyberbob4269" target="_blank" rel="noopener"
                class="px-8 py-4 border border-slate-600 hover:bg-slate-800 font-semibold rounded-3xl transition-all inline-flex items-center justify-center gap-x-3 text-lg">
                 <i class="fab fa-github"></i>
-                <span>Explore GitHub</span>
+                <span>GitHub</span>
             </a>
         </div>
         
-        <p class="mt-8 text-xs text-slate-500">NetwrxSolutions Ltd • Dundee, Scotland • Serving UK &amp; Europe</p>
+        <p class="mt-8 text-xs text-slate-500">
+            NETWRXSOLUTIONS LIMITED • Dundee, Scotland • Skunk Foundry software brand
+        </p>
     </section>
 
     <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-        © 2026 NetwrxSolutions Ltd. All rights reserved. Research use only where applicable.
+        <p>© 2026 NETWRXSOLUTIONS LIMITED. All rights reserved.</p>
+        <p class="mt-2">Food Truth is an informational guide, not medical advice. xTalk is not affiliated with xAI or SpaceX.</p>
     </footer>
 
     <script>
-        // Simple smooth scroll for nav
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const target = document.querySelector(this.getAttribute('href'));
@@ -482,9 +544,6 @@
                 }
             });
         });
-        
-        // Tailwind script for any dynamic classes if needed
-        console.log('%c[NetwrxSolutions] Updated high-level site loaded successfully.', 'color:#64748b');
     </script>
 </body>
 </html>
