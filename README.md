@@ -2,7 +2,7 @@
 
 **Netwrx Solutions Limited** shop — software sold under the **Skunk Foundry** brand (#SkunkFoundry).
 
-**Live site:** [https://cyberbob4269.github.io/netwrx-solutions-website/](https://cyberbob4269.github.io/netwrx-solutions-website/)
+**Live site:** [https://shop.netwrxsolutions.com/](https://shop.netwrxsolutions.com/)
 
 Static storefront served via **GitHub Pages** from the `TSLABoT` branch (default branch; do not rename).
 
