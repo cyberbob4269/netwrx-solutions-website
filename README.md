@@ -11,7 +11,7 @@ Static storefront served via **GitHub Pages** from the `TSLABoT` branch (default
 | Product | Notes |
 |---------|--------|
 | **Email2Report** | Public shop name. Stripe checkout and unlock flow still use **PrefillFromMail**. Kit **£149**, Guided **£199**. After payment: [unlock page](https://cyberbob4269.github.io/prefillfrommail/) → paste key → run on a scheduled email. |
-| **xTalk** | Windows dictation. Installer: [xTalk-Setup.exe (v1.0.3)](https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe) |
+| **xTalk** | Windows dictation. Speech included. **Try 7 days free** (same installer): [xTalk-Setup.exe (v1.0.3)](https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe). After trial, buy to keep dictating — **£14.99** ([Stripe](https://buy.stripe.com/8x26oHg5U0Fn6pI8Pubo400)) or launch **£9.99** ([Stripe](https://buy.stripe.com/fZu9ATcTI87PbK26Hmbo401)). License key on thanks page → Gear → Enter license… |
 | **Food Truth** | **£3.99** |
 
 ## Other pages
