@@ -2,9 +2,9 @@
 
 **Netwrx Solutions Limited** shop — software sold under the **Skunk Foundry** brand (#SkunkFoundry).
 
-**Live site:** [https://shop.netwrxsolutions.com/](https://shop.netwrxsolutions.com/)
+**Live sites:** [https://www.netwrxsolutions.com/](https://www.netwrxsolutions.com/) and the apex [https://netwrxsolutions.com/](https://netwrxsolutions.com/) also serve this shop. [https://shop.netwrxsolutions.com/](https://shop.netwrxsolutions.com/) stays live.
 
-Static storefront served via **GitHub Pages** from the `TSLABoT` branch (default branch; do not rename).
+Static storefront served via **GitHub Pages** from the `TSLABoT` branch (default branch; do not rename). The Pages custom domain and repo `CNAME` stay `shop.netwrxsolutions.com` — do not swap them off shop. Ship updates by pushing `TSLABoT`; www and apex pick up the same origin.
 
 ## Products
 
