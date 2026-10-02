@@ -1,6 +1,6 @@
 # Featured Projects & Platforms
 
-Detailed overview of key initiatives built and maintained by NetwrxSolutions / Scott Kellock.
+Detailed overview of key initiatives built and maintained by Netwrx Solutions / Scott Kellock.
 
 ## Vera@Home / Cosmic Pulse (vera-home-local)
 **Status:** Active • Private  
@@ -8,8 +8,7 @@ Detailed overview of key initiatives built and maintained by NetwrxSolutions / S
 **Description:** Canonical codebase for Cosmic Pulse citizen-science project. Real-time LSST data ingest, SQLite backend, server-sent events for live updates, interactive dashboards, and Deep Space 3D visualization. The foundation for community-driven astronomy and science platforms.
 
 **Links:**  
-- GitHub: https://github.com/cyberbob4269/vera-home-local  
-- Related: cosmicpulse repo
+- Private repo — ask Scott for a demo (not published on GitHub)
 
 ---
 
@@ -19,7 +18,7 @@ Detailed overview of key initiatives built and maintained by NetwrxSolutions / S
 **Description:** Comprehensive private research repository for peptide studies. Includes reconstitution calculators, experiment templates, literature notes, protocol frameworks, and bi-weekly research reports synthesizing the latest peptide science talks, regulatory updates (FDA PCAC), and community insights.
 
 **Links:**  
-- GitHub: https://github.com/cyberbob4269/peptide-research-hub
+- Private repo — ask Scott for a demo (not published on GitHub)
 
 **Note:** Bi-weekly reports are emailed directly — subscribe via the main site contact.
 
@@ -31,7 +30,7 @@ Detailed overview of key initiatives built and maintained by NetwrxSolutions / S
 **Description:** Unified Master Control Program (MCP) server — the intelligent backbone. Brings together Grok capabilities, advanced X (Twitter) search, voice agents, image generation/editing tools, and all connected services into one powerful, production-ready platform.
 
 **Links:**  
-- GitHub: https://github.com/cyberbob4269/xai-mcp-server
+- Private repo — ask Scott for a demo (not published on GitHub)
 
 ---
 
@@ -49,8 +48,7 @@ Detailed overview of key initiatives built and maintained by NetwrxSolutions / S
 **Description:** Library of production-ready automation skills, workflows, and personal connectors. Designed for reliability, repeatability, and easy integration across projects and client work.
 
 **Links:**  
-- automation-skills: https://github.com/cyberbob4269/automation-skills  
-- my-connectors: https://github.com/cyberbob4269/my-connectors
+- Private repos (automation-skills, my-connectors) — ask Scott for a demo. Not published on GitHub.
 
 ---
 
@@ -83,9 +81,9 @@ Detailed overview of key initiatives built and maintained by NetwrxSolutions / S
 
 ---
 
-## NetwrxSolutions Website (This Site)
+## Netwrx Solutions Website (This Site)
 **Status:** Updated July 2026  
-**Description:** The official face of NetwrxSolutions — now fully modernized to reflect the complete range of work from traditional infrastructure to frontier science platforms and AI systems.
+**Description:** The official face of Netwrx Solutions — now fully modernized to reflect the complete range of work from traditional infrastructure to frontier science platforms and AI systems.
 
 **Links:**  
 - GitHub: https://github.com/cyberbob4269/netwrx-solutions-website  
