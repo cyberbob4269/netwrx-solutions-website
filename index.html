@@ -1,730 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skunk Foundry shop — Starlink installs, Email2Report, xTalk, Food Truth, and StackSweep. UK software from Netwrx Solutions Limited.">
-    <link rel="canonical" href="https://shop.netwrxsolutions.com/">
-    <meta property="og:title" content="Skunk Foundry shop | Netwrx Solutions Limited">
-    <meta property="og:description" content="Buy ready-to-run UK software and services: Starlink installs, Email2Report, xTalk, Food Truth, and StackSweep subscription clean-up. Payments via Stripe.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shop.netwrxsolutions.com/">
-    <meta property="og:image" content="https://shop.netwrxsolutions.com/images/skunk-foundry.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Skunk Foundry shop | Netwrx Solutions Limited">
-    <meta name="twitter:description" content="Buy ready-to-run UK software and services: Starlink installs, Email2Report, xTalk, Food Truth, and StackSweep subscription clean-up.">
-    <meta name="twitter:image" content="https://shop.netwrxsolutions.com/images/skunk-foundry.png">
-    <title>NetwrxSolutions | Starlink install · Skunk Foundry shop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Analytics: enable after pointing netwrxsolutions.com at this site.
-         Cloudflare: <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
-         Plausible: <script defer data-domain="netwrxsolutions.com" src="https://plausible.io/js/script.js"></script> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-        
-        :root {
-            --primary: #0f172a;
-        }
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .font-display {
-            font-family: 'Space Grotesk', 'Inter', sans-serif;
-            font-weight: 600;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="dark">
+<title>Design C · Skunk Foundry | The AI receptionist that never misses a call</title>
+<meta name="description" content="Skunk Foundry is a fast-growing UK AI studio. Our virtual phone assistant runs on SpaceX AI's Grok voice. Plus LetReady landlord reminders, ready-to-run software and Starlink installs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap">
+<link rel="preload" as="image" href="designs/assets/skunk-hero-720.webp">
+<style>
+:root{
+  --bg:#06070b;--bg-2:#0a0c12;--card:#0f121a;--card-2:#141824;--line:#232838;--line-2:#323a50;
+  --text:#f4f5f8;--muted:#a3aab9;--accent:#7c8cff;--cyan:#3ee0ff;
+  --grad:linear-gradient(100deg,#9aa6ff 0%,#5ec8ff 55%,#3ee0ff 100%);
+  --display:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --max:1240px;--r:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cyan);text-underline-offset:.18em}
+a:hover{color:#fff}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;margin:0 0 .45em;letter-spacing:-.025em}
+h1{font-size:clamp(2.6rem,5.6vw,4.6rem)}
+h2{font-size:clamp(2rem,3.8vw,3.1rem)}
+h3{font-size:clamp(1.25rem,1.7vw,1.45rem);letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:12px 18px;font-weight:700;z-index:100}
+.skip:focus{left:12px;top:12px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.2rem;max-width:46ch;color:var(--muted)}
+.muted{color:var(--muted)}
+section{padding:104px 0;position:relative}
+.kicker{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.kicker b{color:var(--cyan);font-weight:600}
+.kicker::after{content:"";height:1px;width:64px;background:var(--line-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:1px solid transparent;transition:transform .15s ease,background-color .15s ease,border-color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-white{background:#fff;color:#06070b}
+.btn-white:hover{background:#dfe6ff;color:#06070b}
+.btn-line{background:rgba(255,255,255,.04);color:var(--text);border-color:var(--line-2)}
+.btn-line:hover{border-color:var(--accent);color:#fff}
+.btn-grad{background:var(--grad);color:#06070b}
+.btn-grad:hover{color:#06070b;filter:brightness(1.08)}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+svg.i{width:1.1em;height:1.1em;flex:none}
 
-        .section-header {
-            font-size: 2.25rem;
-            line-height: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-        }
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(6,7,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;flex:none}
+.logo{position:relative;width:44px;height:44px;border-radius:13px;padding:2px;background:var(--grad)}
+.logo img{width:100%;height:100%;border-radius:11px;object-fit:cover}
+.brand b{font-family:var(--display);font-weight:700;font-size:1.2rem;line-height:1;display:block;letter-spacing:-.01em}
+.brand small{display:block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.links{display:none;list-style:none;margin:0;padding:0;gap:30px}
+.links a{color:var(--muted);font-weight:500;font-size:.975rem;text-decoration:none;white-space:nowrap}
+.links a:hover{color:#fff}
+.nav-cta{display:none;min-height:42px;padding:8px 18px;font-size:.95rem;white-space:nowrap}
+.menu summary{list-style:none;cursor:pointer;font-weight:600;border:1px solid var(--line-2);border-radius:999px;padding:9px 18px}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{background:#fff;color:#06070b}
+.menu ul{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);list-style:none;margin:0;padding:8px 28px 24px}
+.menu li a{display:block;padding:12px 0;font-family:var(--display);font-weight:600;font-size:1.25rem;color:var(--text);text-decoration:none;border-bottom:1px solid var(--line)}
+@media (min-width:1200px){.links,.nav-cta{display:flex}.menu{display:none}}
 
-        .service-card,
-        .product-card,
-        .project-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .service-card:hover,
-        .product-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
+/* hero */
+.hero{padding:88px 0 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(124,140,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(124,140,255,.06) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse at 60% 40%,#000 0%,transparent 70%);pointer-events:none}
+.orb{position:absolute;width:620px;height:620px;right:-80px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(94,120,255,.35) 0%,rgba(62,224,255,.12) 40%,transparent 70%);filter:blur(10px);pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-60px,40px) scale(1.08)}}
+.hero-grid{position:relative;display:grid;gap:56px;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 10px;border:1px solid var(--line-2);border-radius:999px;background:rgba(255,255,255,.03);font-size:.9rem;font-weight:500;color:var(--text);margin-bottom:26px}
+.pill .dot{width:22px;height:22px;border-radius:50%;background:var(--grad);display:grid;place-items:center}
+.pill .dot::after{content:"";width:8px;height:8px;border-radius:50%;background:#06070b}
+.pill strong{font-weight:700}
+.hero .lead{font-size:1.25rem;max-width:44ch}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 28px;margin-top:44px;padding-top:28px;border-top:1px solid var(--line);max-width:620px}
+.stats b{display:block;font-family:var(--display);font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
+.stats span{font-size:.88rem;color:var(--muted)}
+.visual{position:relative;justify-self:end;width:100%;max-width:500px}
+.portrait{border-radius:28px;padding:1px;background:linear-gradient(160deg,rgba(154,166,255,.7),rgba(62,224,255,.15) 40%,rgba(255,255,255,.04))}
+.portrait img{border-radius:27px;width:100%;aspect-ratio:1/1;object-fit:cover}
+.call{position:absolute;left:-56px;bottom:-34px;width:330px;background:rgba(12,14,22,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line-2);border-radius:20px;padding:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.call .top{display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:var(--muted);margin-bottom:10px}
+.live{display:inline-flex;align-items:center;gap:8px;color:#7cf5c4;font-weight:600}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:#7cf5c4;box-shadow:0 0 0 4px rgba(124,245,196,.18);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.wave{display:flex;align-items:center;gap:4px;height:30px;margin-bottom:12px}
+.wave i{display:block;width:4px;border-radius:3px;background:var(--grad);height:30%;animation:wv 1.1s ease-in-out infinite}
+.wave i:nth-child(2n){animation-delay:.15s}.wave i:nth-child(3n){animation-delay:.3s}.wave i:nth-child(5n){animation-delay:.45s}
+@keyframes wv{0%,100%{height:25%}50%{height:100%}}
+.bubble{border-radius:14px;padding:9px 13px;margin:8px 0;font-size:.9rem;line-height:1.45}
+.bubble b{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
+.bubble.c{background:#1b2030;margin-right:30px}
+.bubble.a{background:linear-gradient(120deg,#3846c9,#2a7fb8);margin-left:30px}
+.sms{margin-top:10px;display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.sms strong{color:var(--text)}
 
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-        }
+/* powered strip */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);padding:22px 0}
+.strip .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px;font-size:.92rem;color:var(--muted)}
+.strip b{color:var(--text);font-family:var(--display);font-weight:600}
 
-        .nav-link {
-            transition: color 0.2s ease;
-        }
-        
-        .nav-link:hover {
-            color: #1d9bf0;
-        }
+/* assistant */
+.steps{display:grid;gap:20px;grid-template-columns:repeat(3,1fr);margin:44px 0 28px}
+.step .n{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--card-2);border:1px solid var(--line-2);font-family:var(--display);font-weight:700;color:var(--cyan);margin-bottom:16px}
+.step p{margin:0;color:var(--muted)}
+.callrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;margin:0 0 44px;padding:28px 32px;border-radius:var(--r);background:radial-gradient(120% 140% at 0% 0%,rgba(94,120,255,.25),transparent 60%),var(--card);border:1px solid var(--line-2)}
+.callrow p{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,2.6vw,2rem);letter-spacing:-.02em}
+.callrow p span{display:block;font-family:system-ui,sans-serif;font-weight:400;font-size:1rem;color:var(--muted);letter-spacing:0}
+.callrow a.big{font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,2.6vw,1.9rem);text-decoration:none;white-space:nowrap}
+.tiers{display:grid;gap:22px;grid-template-columns:repeat(3,1fr)}
+.tier{display:flex;flex-direction:column}
+.tier .nm{font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tier .pr{font-family:var(--display);font-size:3rem;font-weight:700;letter-spacing:-.03em;line-height:1;margin:14px 0 10px;white-space:nowrap}
+.tier .pr small{font-family:system-ui,sans-serif;font-size:1rem;font-weight:500;color:var(--muted);letter-spacing:0}
+.tier ul{list-style:none;padding:0;margin:18px 0 26px;color:var(--muted)}
+.tier li{padding:7px 0 7px 26px;position:relative}
+.tier li::before{content:"";position:absolute;left:2px;top:.95em;width:10px;height:6px;border-left:2px solid var(--cyan);border-bottom:2px solid var(--cyan);transform:rotate(-45deg)}
+.tier .btn{margin-top:auto}
+.tier.feat{background:linear-gradient(var(--card-2),var(--card-2)) padding-box,var(--grad) border-box;border:1px solid transparent;box-shadow:0 30px 80px -40px rgba(94,140,255,.6)}
+.free{align-self:flex-start;font-weight:600;font-size:.8rem;color:#bdf3ff;background:rgba(62,224,255,.1);border:1px solid rgba(62,224,255,.3);border-radius:999px;padding:3px 12px}
+.badge{position:absolute;top:-12px;right:22px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#fff;color:#06070b;border-radius:999px;padding:4px 12px}
 
-        .hero-bg {
-            background: #000000;
-        }
+/* add-ons */
+.alt{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tiles{display:grid;gap:18px;grid-template-columns:repeat(4,1fr);margin-top:40px}
+.tile{display:flex;flex-direction:column;gap:6px;padding:24px;transition:border-color .15s ease}
+.tile:hover{border-color:var(--line-2)}
+.tile .pr{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--text)}
+.tile .pr small{font-family:system-ui,sans-serif;font-weight:500;font-size:.85rem;color:var(--muted)}
+.tile h3{font-size:1.1rem;margin:4px 0 0;color:var(--cyan)}
+.tile p{margin:0;font-size:.95rem;color:var(--muted)}
+.tile .x{margin-top:auto;padding-top:10px;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
 
-        .accent {
-            color: #1d9bf0;
-        }
+/* letready */
+.lr-grid{display:grid;gap:56px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+.lr ul{list-style:none;padding:0;margin:0 0 30px}
+.lr li{font-size:1.05rem;padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px}
+.lr li::before{content:"→";color:var(--cyan)}
+.cal{border-radius:var(--r);overflow:hidden;border:1px solid var(--line-2);background:var(--card)}
+.cal header{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:var(--card-2);font-family:var(--display);font-weight:600}
+.cal header span{font-family:system-ui,sans-serif;font-weight:400;font-size:.88rem;color:var(--muted)}
+.cal div{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:center;padding:15px 22px;border-top:1px solid var(--line);font-size:.98rem}
+.cal time{color:var(--muted);font-size:.9rem}
+.tg{font-weight:600;font-size:.78rem;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.tg.ok{background:rgba(124,245,196,.12);color:#8ff5cc}.tg.due{background:rgba(124,140,255,.16);color:#c2c9ff}.tg.late{background:rgba(255,120,120,.14);color:#ffb0b0}
 
-        .x-card {
-            background-color: #16181c;
-            border-color: #2f3336;
-        }
+/* skunk band */
+.band{padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.band picture img{width:100%;height:460px;object-fit:cover;object-position:30% 30%;filter:saturate(.8) brightness(.75)}
+.band .over{position:absolute;inset:0;display:flex;align-items:center;background:linear-gradient(270deg,rgba(6,7,11,.95) 0%,rgba(6,7,11,.8) 42%,rgba(6,7,11,.1) 75%)}
+.band .over .wrap{width:100%}
+.band .copy{margin-left:auto;max-width:520px}
+.band h2{max-width:16ch}
+.band p{color:#d3d7e0;max-width:40ch;font-size:1.15rem}
 
-        .x-card:hover {
-            border-color: #1d9bf0;
-        }
+/* software */
+.prods{display:grid;gap:22px;grid-template-columns:repeat(2,1fr);margin-top:40px}
+.prod{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.prod img{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+.prod .body{padding:26px;display:flex;flex-direction:column;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{font-weight:600;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;color:var(--muted)}
+.buys{display:flex;flex-wrap:wrap;gap:12px;margin-top:auto;padding-top:14px}
+.buy{display:flex;flex-direction:column;min-width:140px;padding:12px 18px;border:1px solid var(--line-2);border-radius:14px;color:var(--text);text-decoration:none;background:var(--card-2);transition:border-color .15s ease}
+.buy:hover{border-color:var(--cyan);color:var(--text)}
+.buy.feat{background:#fff;color:#06070b;border-color:#fff}
+.buy.feat .k{color:#3a4255}
+.buy .k{font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.buy .v{font-family:var(--display);font-weight:700;font-size:1.5rem;letter-spacing:-.02em}
+.small{font-size:.9rem;color:var(--muted)}
+.ss-art{aspect-ratio:16/9;border-bottom:1px solid var(--line);display:grid;place-items:center;text-align:center;background:radial-gradient(80% 120% at 50% 0%,rgba(94,120,255,.3),transparent 70%),var(--card-2)}
+.ss-art span{font-family:var(--display);font-weight:700;font-size:3.4rem;letter-spacing:-.03em}
 
-        .buy-btn {
-            transition: all 0.2s ease;
-        }
+/* starlink */
+.sl-grid{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);margin-top:36px}
+a.tier{color:var(--text);text-decoration:none;transition:border-color .15s ease}
+a.tier:hover{border-color:var(--line-2)}
+a.tier > span:nth-child(3){padding-bottom:22px;color:var(--muted)}
 
-        .buy-btn:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 10px 20px -8px rgb(29 155 240 / 0.45);
-        }
+/* contact */
+.big-links{display:grid;margin-top:28px;border-top:1px solid var(--line)}
+.big-links a{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;font-family:var(--display);font-weight:600;font-size:clamp(1.3rem,3vw,2.3rem);letter-spacing:-.02em;color:var(--text);text-decoration:none;padding:22px 0;border-bottom:1px solid var(--line);word-break:break-word}
+.big-links a span{font-family:system-ui,sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.big-links a:hover{color:var(--cyan)}
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
+footer p{margin:0}
 
-        .price-tier {
-            border: 1px solid #2f3336;
-            transition: border-color 0.2s ease, background-color 0.2s ease;
-        }
-
-        .price-tier:hover {
-            border-color: #1d9bf0;
-            background-color: rgb(29 155 240 / 0.05);
-        }
-
-        .price-tier.featured {
-            border-color: #1d9bf0;
-            background-color: rgb(29 155 240 / 0.08);
-        }
-    </style>
-    <script async src="https://cdn.promotekit.com/pk.js" data-promotekit="0ddb0ebd-dbf3-4aa7-b44b-b068648ed9f6"></script>
-    <script>
-(function () {
-  function applyReferral() {
-    var referralId = window.promotekit_referral;
-    if (!referralId) return false;
-
-    document.querySelectorAll('a[href^="https://buy.stripe.com/"]').forEach(function (link) {
-      var oldBuyUrl = link.getAttribute("href");
-      if (!oldBuyUrl.includes("client_reference_id")) {
-        var separator = oldBuyUrl.includes("?") ? "&" : "?";
-        link.setAttribute("href", oldBuyUrl + separator + "client_reference_id=" + referralId);
-      }
-    });
-
-    document.querySelectorAll("[pricing-table-id]").forEach(function (element) {
-      element.setAttribute("client-reference-id", referralId);
-    });
-
-    document.querySelectorAll("[buy-button-id]").forEach(function (element) {
-      element.setAttribute("client-reference-id", referralId);
-    });
-
-    return true;
-  }
-
-  function start() {
-    var attempts = 0;
-    var poll = setInterval(function () {
-      attempts++;
-      if (applyReferral() || attempts >= 40) {
-        clearInterval(poll);
-      }
-    }, 500);
-
-    if (window.MutationObserver && document.body) {
-      var scheduled = false;
-      new MutationObserver(function () {
-        if (scheduled) return;
-        scheduled = true;
-        setTimeout(function () {
-          scheduled = false;
-          applyReferral();
-        }, 200);
-      }).observe(document.body, { childList: true, subtree: true });
-    }
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", start);
-  } else {
-    start();
-  }
-})();
-    </script>
+@media (max-width:1100px){.tiles{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:960px){
+  .hero-grid,.lr-grid{grid-template-columns:1fr}
+  .visual{justify-self:start;max-width:520px}
+  .call{left:auto;right:16px;bottom:-30px}
+  .tiers,.sl-grid,.prods,.steps{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}
+  section{padding:80px 0}
+  .tiles{grid-template-columns:1fr}
+  .logo{width:38px;height:38px}
+  .brand b{font-size:1.05rem}
+  .brand small{font-size:.65rem}
+  .call{position:relative;left:0;right:0;bottom:0;width:auto;margin:-60px 12px 0}
+  .callrow{padding:22px}
+  .callrow a.big{white-space:normal}
+  .cal div{grid-template-columns:1fr auto}
+  .cal time{grid-column:1/-1}
+  .band picture img{height:520px}
+  .band .over{background:linear-gradient(0deg,rgba(6,7,11,.95) 0%,rgba(6,7,11,.6) 60%,rgba(6,7,11,.2) 100%);align-items:flex-end;padding-bottom:36px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .wave i{height:60%}.wave i:nth-child(2n){height:35%}.wave i:nth-child(3n){height:90%}
+}
+</style>
+<script async src="https://cdn.promotekit.com/pk.js" data-promotekit="0ddb0ebd-dbf3-4aa7-b44b-b068648ed9f6"></script>
+<script defer src="designs/assets/referral.js"></script>
 </head>
-<body class="bg-black text-white">
-    <!-- Navigation -->
-    <nav class="bg-black border-b border-[#2f3336] sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 rounded-xl overflow-hidden border border-yellow-500 shadow-inner">
-                    <img src="images/skunk-foundry.png" alt="Skunk Foundry" class="w-full h-full object-cover object-center">
-                </div>
-                <div>
-                    <span class="font-display text-2xl font-semibold tracking-tight">NetwrxSolutions</span>
-                    <div class="text-[10px] uppercase tracking-[2px] text-slate-500 -mt-0.5">Skunk Foundry</div>
-                </div>
-            </div>
-            
-            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                <a href="#starlink" class="nav-link text-sky-400 hover:text-white">Starlink install</a>
-                <a href="#shop" class="nav-link text-slate-300 hover:text-white">Shop</a>
-                <a href="#citizen-science" class="nav-link text-slate-300 hover:text-white">Citizen Science</a>
-                <a href="#services" class="nav-link text-slate-300 hover:text-white">Services</a>
-                <a href="#projects" class="nav-link text-slate-300 hover:text-white">Projects</a>
-                <a href="#about" class="nav-link text-slate-300 hover:text-white">About</a>
-                <a href="essay-light-speed-tsunami.html" class="nav-link text-slate-300 hover:text-white">Writing</a>
-            </div>
-            
-            <div class="flex items-center gap-x-3">
-                <a href="#starlink" 
-                   class="px-5 py-2.5 text-sm font-semibold bg-sky-500 text-slate-900 rounded-2xl hover:bg-sky-400 transition-colors flex items-center gap-x-2">
-                    <i class="fas fa-satellite-dish text-xs"></i>
-                    <span>Starlink</span>
-                </a>
-                <a href="#contact" 
-                   class="hidden md:flex px-4 py-2.5 text-sm font-medium border border-slate-700 hover:bg-slate-800 rounded-2xl transition-colors">
-                    Contact
-                </a>
-            </div>
-        </div>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v12H7l-3 3z"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Skunk Foundry home">
+      <span class="logo"><img src="designs/assets/skunk-mark-192.webp" width="96" height="96" alt=""></span>
+      <span><b>Skunk Foundry</b><small>AI studio · NetwrxSolutions</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="links">
+        <li><a href="#assistant">Assistant</a></li>
+        <li><a href="#addons">Add-ons</a></li>
+        <li><a href="#letready">LetReady</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#starlink">Starlink</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <details class="menu">
+        <summary>Menu</summary>
+        <ul>
+          <li><a href="#assistant">Virtual Assistant</a></li>
+          <li><a href="#addons">Early-bird add-ons</a></li>
+          <li><a href="#letready">LetReady</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#starlink">Starlink installs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
     </nav>
+    <a class="btn btn-white nav-cta" href="tel:07888867893"><svg class="i"><use href="#i-phone"/></svg>Try it: 07888 867893</a>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <header class="hero-bg pt-16 pb-20">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <div class="mb-10">
-                <img src="images/skunk-foundry.png" alt="Skunk Foundry — built in the quiet, delivers in the real world" class="w-full h-auto rounded-3xl border border-yellow-500/40 shadow-2xl shadow-yellow-500/10">
-            </div>
-            <div class="inline-flex items-center gap-x-2 bg-slate-800 border border-slate-700 rounded-full px-4 py-1.5 mb-6 text-sm">
-                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                <span class="font-medium text-emerald-400">Skunk Foundry • UK</span>
-            </div>
-            
-            <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
-                Software that<br>
-                <span class="accent">works in the real world.</span>
-            </h1>
-            
-            <p class="max-w-2xl mx-auto text-xl text-slate-300 mb-10">
-                Buy ready-to-run tools from <strong class="text-white font-medium">Skunk Foundry</strong> — automation, voice input, and food intelligence.
-                Built by Scott Kellock at NetwrxSolutions Ltd.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#starlink" 
-                   class="px-8 py-4 text-lg font-semibold bg-sky-500 text-slate-900 rounded-3xl hover:bg-sky-400 transition-all flex items-center justify-center gap-x-3 shadow-xl shadow-sky-500/20">
-                    <span>Starlink install from £299</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#shop" 
-                   class="px-8 py-4 text-lg font-semibold bg-white text-slate-900 rounded-3xl hover:bg-slate-100 transition-all flex items-center justify-center gap-x-3 shadow-xl shadow-sky-500/20">
-                    <span>Browse software</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#contact" 
-                   class="px-8 py-4 text-lg font-semibold border border-slate-600 hover:bg-slate-800 rounded-3xl transition-all flex items-center justify-center gap-x-3">
-                    <span>Custom Work &amp; Quotes</span>
-                </a>
-            </div>
-            
-            <div class="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-slate-400">
-                <div class="flex items-center gap-x-2">
-                    <i class="fas fa-lock text-emerald-400"></i>
-                    <span>Secure checkout via Stripe</span>
-                </div>
-                <div class="flex items-center gap-x-2">
-                    <i class="fas fa-bolt text-emerald-400"></i>
-                    <span>Instant access after payment</span>
-                </div>
-                <div class="flex items-center gap-x-2">
-                    <i class="fas fa-envelope text-emerald-400"></i>
-                    <span>scott@netwrxsolutions.com</span>
-                </div>
-            </div>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="orb" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><span class="dot" aria-hidden="true"></span>Powered by <strong>SpaceX AI</strong> · Grok voice</span>
+      <h1 id="hero-h">The AI receptionist that <span class="grad">never misses a call.</span></h1>
+      <p class="lead">Skunk Foundry is a fast-growing UK AI studio. Our virtual assistant answers your phone in a natural voice, books appointments and texts you who called and why, within seconds.</p>
+      <div class="btns">
+        <a class="btn btn-white" href="tel:07888867893"><svg class="i"><use href="#i-phone"/></svg><span>Call the live demo: <span style="white-space:nowrap">07888 867893</span></span></a>
+        <a class="btn btn-line" href="#plans">See plans<svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="stats">
+        <div><b>1st ring</b><span>Every call answered</span></div>
+        <div><b>24/7</b><span>Nights and weekends</span></div>
+        <div><b>30 days</b><span>Free on every plan</span></div>
+        <div><b>£14.99</b><span>From, per month</span></div>
+      </div>
+    </div>
+    <div class="visual">
+      <div class="portrait"><img src="designs/assets/skunk-hero-720.webp" width="720" height="720" alt="The Skunk Foundry mascot: a skunk in brass welding goggles, arms folded, in a dark workshop." fetchpriority="high"></div>
+      <div class="call" role="img" aria-label="Example call: the assistant answers a caller asking about a flat, offers a viewing and texts the owner a summary.">
+        <div class="top"><span class="live">Live call</span><span>00:42</span></div>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="bubble c"><b>Caller</b>Is the flat on Perth Road still available?</div>
+        <div class="bubble a"><b>Assistant</b>It is. Shall I book you a viewing on Thursday at 5pm?</div>
+        <div class="sms"><svg class="i" aria-hidden="true"><use href="#i-msg"/></svg><span><strong>Texted to you:</strong> Sarah, viewing Thursday 5pm, urgent.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>Voice AI</b> by SpaceX AI (Grok)</span>
+    <span><b>Secure payments</b> via Stripe</span>
+    <span><b>UK numbers</b>, mobile or local</span>
+    <span><b>Built in</b> Dundee, Scotland</span>
+  </div>
+</div>
+
+<section id="assistant" aria-labelledby="va-h">
+  <div class="wrap">
+    <div class="kicker"><b>01</b>Virtual Assistant · live now</div>
+    <h2 id="va-h">Answers like your best receptionist. <span class="grad">Costs less than lunch.</span></h2>
+    <p class="lead">Built for letting agents, landlords, trades, salons and small offices that can't always get to the phone.</p>
+    <div class="steps">
+      <article class="card step"><span class="n">1</span><h3>A customer calls</h3><p>Your number forwards to the assistant when you're busy, out, or after hours.</p></article>
+      <article class="card step"><span class="n">2</span><h3>Grok voice answers</h3><p>It talks naturally, answers your FAQs, takes details and books appointments.</p></article>
+      <article class="card step"><span class="n">3</span><h3>You get a text</h3><p>Name, reason and urgency land on your phone in seconds, with an email copy.</p></article>
+    </div>
+    <div class="callrow" id="plans">
+      <p>Try it now: call 07888 867893<span>Hear it answer, live. No sign-up needed.</span></p>
+      <a class="big grad" href="tel:07888867893">07888 867893 →</a>
+    </div>
+    <div class="tiers">
+      <article class="card tier">
+        <span class="nm">Personal</span>
+        <span class="pr">£14.99<small> /month</small></span>
+        <span class="free">First 30 days free</span>
+        <ul><li>Answers your calls 24/7</li><li>Messages texted and emailed</li><li>Mobile or local number</li></ul>
+        <a class="btn btn-line" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Personal%20free%20trial">Start free trial</a>
+      </article>
+      <article class="card tier feat" style="position:relative">
+        <span class="badge">Most popular</span>
+        <span class="nm">Business</span>
+        <span class="pr">£29<small> /month</small></span>
+        <span class="free">First 30 days free</span>
+        <ul><li>Everything in Personal</li><li>Knows your business and FAQs</li><li>Urgent calls flagged at once</li></ul>
+        <a class="btn btn-white" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Business%20free%20trial">Start free trial</a>
+      </article>
+      <article class="card tier">
+        <span class="nm">Team</span>
+        <span class="pr">£49<small> /month</small></span>
+        <span class="free">First 30 days free</span>
+        <ul><li>Everything in Business</li><li>Routes messages to the right person</li><li>For offices and agents</li></ul>
+        <a class="btn btn-line" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Team%20free%20trial">Start free trial</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="addons" aria-labelledby="ao-h">
+  <div class="wrap">
+    <div class="kicker"><b>02</b>Early-bird add-ons</div>
+    <h2 id="ao-h">Add more AI as you grow.</h2>
+    <p class="lead">Bolt these onto your assistant. Early-bird prices are locked in for your first 12 months.</p>
+    <div class="tiles">
+      <article class="card tile"><span class="pr">£7.99<small> /mo</small></span><h3>Email assistant</h3><p>Sorts your inbox, drafts replies to common questions, flags urgent ones.</p><span class="x">£14.99 standalone</span></article>
+      <article class="card tile"><span class="pr">£4.99<small> /mo</small></span><h3>Google reviews</h3><p>Asks happy customers for reviews and drafts replies to new ones.</p><span class="x">£9.99 standalone</span></article>
+      <article class="card tile"><span class="pr">£7.99<small> /mo</small></span><h3>Lead follow-up</h3><p>Every enquiry chased within minutes, not days.</p><span class="x">£14.99 standalone</span></article>
+      <article class="card tile"><span class="pr">£7.99<small> /mo</small></span><h3>Booking and reminders</h3><p>Appointments into your calendar, with text reminders to cut no-shows.</p><span class="x">Add-on</span></article>
+      <article class="card tile"><span class="pr">£7.99<small> /mo</small></span><h3>Website chat</h3><p>Answers questions and books viewings on your website, day and night.</p><span class="x">£14.99 standalone</span></article>
+      <article class="card tile"><span class="pr">£19<small> /mo</small></span><h3>Social media</h3><p>Three posts a week written and scheduled, with replies drafted.</p><span class="x">Done for you</span></article>
+      <article class="card tile"><span class="pr">£14.99<small> /mo</small></span><h3>Paperwork and forms</h3><p>Photos and notes turned into finished reports, like site visits.</p><span class="x">or £5 per report</span></article>
+      <article class="card tile"><span class="pr">£79</span><h3>AI staff training</h3><p>A half-day getting your team confident with ChatGPT, Grok and friends.</p><span class="x">£29 follow-up hour</span></article>
+    </div>
+    <p style="margin-top:32px" class="muted">Reserve your early-bird price: <a href="mailto:scott@netwrxsolutions.com?subject=Early-bird%20add-ons">scott@netwrxsolutions.com</a> or <a href="tel:07913300361">07913 300361</a></p>
+  </div>
+</section>
+
+<section class="lr" id="letready" aria-labelledby="lr-h">
+  <div class="wrap lr-grid">
+    <div>
+      <div class="kicker"><b>03</b>LetReady · for landlords</div>
+      <h2 id="lr-h">Stay compliant <span class="grad">without the spreadsheet.</span></h2>
+      <p class="lead">LetReady tracks every certificate and deadline for your properties and reminds you before anything runs out.</p>
+      <ul>
+        <li>Gas safety reminders</li>
+        <li>EICR electrical reminders</li>
+        <li>Deposit protection reminders</li>
+        <li>Bundle it with the phone assistant</li>
+      </ul>
+      <a class="btn btn-white" href="https://getletready.co.uk/" target="_blank" rel="noopener">Open LetReady<svg class="i"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cal" aria-label="Example LetReady reminder list">
+      <header>Coming up<span>12 Example Street</span></header>
+      <div><time>Today</time><span>Smoke alarm check</span><span class="tg late">Overdue</span></div>
+      <div><time>In 21 days</time><span>EICR renewal</span><span class="tg due">Reminder sent</span></div>
+      <div><time>In 7 months</time><span>Gas safety</span><span class="tg ok">Valid</span></div>
+      <div><time>Done</time><span>Deposit protection</span><span class="tg ok">Protected</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="band-h">
+  <picture>
+    <source media="(max-width: 600px)" srcset="designs/assets/skunk-portrait-560.webp">
+    <img src="designs/assets/skunk-scene-1536.webp" width="1536" height="690" loading="lazy" alt="">
+  </picture>
+  <div class="over">
+    <div class="wrap">
+      <div class="copy">
+        <div class="kicker"><b>Skunk Foundry</b>How we work</div>
+        <h2 id="band-h">Built in the quiet. <span class="grad">Delivers in the real world.</span></h2>
+        <p>No committee. No noise. Just solutions. A small, fast AI team shipping tools UK businesses use every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="software" aria-labelledby="sw-h">
+  <div class="wrap">
+    <div class="kicker"><b>04</b>Software you can buy today</div>
+    <h2 id="sw-h">Shipped from the foundry.</h2>
+    <p class="lead">Live products, real prices, secure Stripe checkout. Unlock straight after you pay.</p>
+    <div class="prods">
+      <article class="card prod" id="email2report">
+        <img src="designs/assets/email2report.webp" width="640" height="640" loading="lazy" alt="Email2Report: a scheduled email turned into a job report on a laptop and phone">
+        <div class="body">
+          <div class="chips"><span class="chip">Automation</span><span class="chip">Also: PrefillFromMail</span></div>
+          <h3>Email2Report</h3>
+          <p class="muted">Schedule an email in Gmail and get a job report or SafetyCulture inspection with headers filled in, about 24 hours before the job, in your own Google account.</p>
+          <p class="small">Needs SafetyCulture Premium or Enterprise plus Gmail. After paying, use the <a href="https://cyberbob4269.github.io/prefillfrommail/" target="_blank" rel="noopener">unlock page</a> with your checkout email.</p>
+          <div class="buys">
+            <a class="buy" href="https://buy.stripe.com/00w7sL6vk2Nv5lE5Dibo407" target="_blank" rel="noopener"><span class="k">Kit</span><span class="v">£149</span></a>
+            <a class="buy feat" href="https://buy.stripe.com/5kQ14n06W9bT5lE9Tybo408" target="_blank" rel="noopener"><span class="k">Guided</span><span class="v">£199</span></a>
+          </div>
         </div>
-    </header>
-
-    <!-- Starlink field install (Netwrx, not Skunk Foundry software) -->
-    <section id="starlink" class="bg-slate-950 border-t border-slate-800 py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">NETWRX FIELD INSTALL</div>
-                <h2 class="section-header">Starlink installed and working</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-slate-400">From £40 a month you pay Starlink. We fit the kit you already own (or will own). Independent installer — not Starlink, SpaceX, or Satworks. Booked visit, not an instant download.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <a href="https://buy.stripe.com/dRm14n7zo4VDdSaaXCbo409" target="_blank" rel="noopener"
-                   class="price-tier rounded-3xl p-8 text-center buy-btn block">
-                    <div class="text-sm uppercase tracking-[2px] text-slate-400">Wall / fascia</div>
-                    <div class="text-4xl font-bold my-4">£299</div>
-                    <p class="text-slate-400 mb-6">Single-storey, short cable, kit on site.</p>
-                    <span class="block py-6 text-xl font-semibold bg-sky-500 text-slate-900 rounded-2xl">Buy Now</span>
-                </a>
-                <a href="https://buy.stripe.com/cNi3cv1b0co57tM4zebo40a" target="_blank" rel="noopener"
-                   class="price-tier featured rounded-3xl p-8 text-center buy-btn block">
-                    <div class="text-sm uppercase tracking-[2px] text-sky-400">Typical house</div>
-                    <div class="text-5xl font-bold my-4">£349</div>
-                    <p class="text-slate-400 mb-6">Two-storey or longer run.</p>
-                    <span class="block py-6 text-xl font-semibold bg-white text-slate-900 rounded-2xl">Buy Now</span>
-                </a>
-                <a href="https://buy.stripe.com/eVq14ndXMgEl01kc1Gbo40b" target="_blank" rel="noopener"
-                   class="price-tier rounded-3xl p-8 text-center buy-btn block">
-                    <div class="text-sm uppercase tracking-[2px] text-slate-400">Roof / complex</div>
-                    <div class="text-4xl font-bold my-4">£449</div>
-                    <p class="text-slate-400 mb-6">Roof, pole, chimney, awkward access.</p>
-                    <span class="block py-6 text-xl font-semibold bg-sky-500 text-slate-900 rounded-2xl">Buy Now</span>
-                </a>
-            </div>
-            <div class="mt-10 flex flex-wrap justify-center gap-6 text-lg">
-                <a class="text-sky-400" href="https://wa.me/447913300361?text=Starlink%20sky-check">WhatsApp sky-check</a>
-                <a class="text-sky-400" href="mailto:scott@netwrxsolutions.com">scott@netwrxsolutions.com</a>
-                <a class="text-sky-400" href="tel:07913300361">07913 300361</a>
-            </div>
+      </article>
+      <article class="card prod" id="xtalk">
+        <img src="designs/assets/xtalk.webp" width="640" height="640" loading="lazy" alt="xTalk: talk to your computer">
+        <div class="body">
+          <div class="chips"><span class="chip">Windows</span><span class="chip">Voice to text</span></div>
+          <h3>xTalk</h3>
+          <p class="muted">Talk to your computer. Speak and text appears at your cursor, anywhere on Windows. Speech included, no API key. <a href="https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe" target="_blank" rel="noopener">Try it free for 7 days</a>.</p>
+          <p class="small">After paying, copy the licence key from the thanks page, then in xTalk choose Gear, Enter licence.</p>
+          <div class="buys">
+            <a class="buy feat" href="https://buy.stripe.com/fZu9ATcTI87PbK26Hmbo401" target="_blank" rel="noopener"><span class="k">UK launch</span><span class="v">£9.99</span></a>
+            <a class="buy" href="https://buy.stripe.com/8x26oHg5U0Fn6pI8Pubo400" target="_blank" rel="noopener"><span class="k">UK full</span><span class="v">£14.99</span></a>
+          </div>
         </div>
-    </section>
-
-    <!-- Shop Section -->
-    <section id="shop" class="bg-slate-900 border-t border-slate-800 py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">SKUNK FOUNDRY SHOP</div>
-                <h2 class="section-header">Buy Software</h2>
-                <p class="mt-4 max-w-lg mx-auto text-slate-400">Live products with real prices. <strong class="text-slate-300">Email2Report</strong> leads — then xTalk and Food Truth below. Pay with Stripe; unlock details right after checkout.</p>
-            </div>
-
-            <div class="space-y-10">
-
-                <!-- Email2Report -->
-                <article id="email2report" class="product-card x-card border rounded-3xl p-8 md:p-10">
-                    <div class="flex flex-col lg:flex-row gap-8">
-                                                <div class="lg:w-2/5">
-                            <img src="images/email2report.jpg" alt="Email2Report - scheduled email to SafetyCulture inspection" class="w-full rounded-2xl object-cover shadow-lg border border-slate-700" style="max-height: 280px;">
-                        </div>
-                        <div class="lg:w-3/5">
-                            <div class="flex flex-wrap items-center gap-2 mb-3">
-                                <span class="px-3 py-1 bg-sky-500/10 text-sky-400 text-xs font-medium rounded-full">Automation</span>
-                                <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Also: PrefillFromMail</span>
-                            </div>
-                            <h3 class="font-display text-3xl font-semibold mb-3">Email2Report</h3>
-                            <p class="text-slate-300 mb-4 leading-relaxed">
-                                Schedule an email in Gmail and get a job report or SafetyCulture inspection with headers filled in —
-                                about <strong class="text-white">24 hours before</strong> the job, running in <strong class="text-white">your own Google account</strong>.
-                                No third-party data hosting.
-                            </p>
-                            <p class="text-sm text-slate-500 mb-6">
-                                <i class="fas fa-info-circle mr-1"></i>
-                                Requires <strong class="text-slate-400">SafetyCulture Premium or Enterprise</strong> plus Gmail.
-                            </p>
-
-                            <div class="grid sm:grid-cols-2 gap-3 mb-6 max-w-lg">
-                                <a href="https://buy.stripe.com/00w7sL6vk2Nv5lE5Dibo407" target="_blank" rel="noopener"
-                                   class="price-tier rounded-2xl p-4 text-center buy-btn block">
-                                    <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Kit</div>
-                                    <div class="text-2xl font-semibold text-white">£149</div>
-                                    <div class="text-xs text-slate-400 mt-1">Self-install templates</div>
-                                </a>
-                                <a href="https://buy.stripe.com/5kQ14n06W9bT5lE9Tybo408" target="_blank" rel="noopener"
-                                   class="price-tier featured rounded-2xl p-4 text-center buy-btn block">
-                                    <div class="text-xs uppercase tracking-wider text-sky-400 mb-1">Guided</div>
-                                    <div class="text-2xl font-semibold text-white">£199</div>
-                                    <div class="text-xs text-slate-400 mt-1">Setup walkthrough</div>
-                                </a>
-                            </div>
-
-                            <div class="flex flex-wrap items-center gap-4 text-sm mb-4">
-                                <a href="https://cyberbob4269.github.io/prefillfrommail/" target="_blank" rel="noopener"
-                                   class="text-sky-400 hover:text-sky-300 font-medium">
-                                    <i class="fas fa-unlock-alt mr-1"></i> After payment — unlock &amp; setup guide
-                                </a>
-                            </div>
-
-                            <div class="rounded-2xl border border-slate-700 bg-slate-800/40 p-4 text-sm text-slate-300 max-w-lg">
-                                <p class="font-medium text-slate-200 mb-2">After you pay:</p>
-                                <ol class="list-decimal list-inside space-y-1 text-slate-400">
-                                    <li>Pay via Stripe (Kit or Guided above)</li>
-                                    <li>Open the <a href="https://cyberbob4269.github.io/prefillfrommail/" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 underline">unlock page</a> with your checkout email</li>
-                                    <li>Paste the license key into the setup script</li>
-                                    <li>Run on a real scheduled XLS/CSV email</li>
-                                </ol>
-                                <p class="mt-2 text-xs text-slate-500">Questions? <a href="mailto:scott@netwrxsolutions.com" class="text-sky-400 hover:text-sky-300">scott@netwrxsolutions.com</a> — keys are minted automatically; no need to email us your spreadsheet.</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- xTalk -->
-                <article id="xtalk" class="product-card x-card border rounded-3xl p-8 md:p-10">
-                    <div class="flex flex-col lg:flex-row gap-8">
-                        <div class="lg:w-2/5">
-                            <img src="images/xtalk.jpg" alt="xTalk — Talk to Your Computer" class="w-full rounded-2xl object-cover shadow-lg border border-slate-700" style="max-height: 280px;">
-                        </div>
-                        <div class="lg:w-3/5">
-                            <div class="flex flex-wrap items-center gap-2 mb-3">
-                                <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-xs font-medium rounded-full">Windows</span>
-                                <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Voice → Text</span>
-                            </div>
-                            <h3 class="font-display text-3xl font-semibold mb-1">xTalk</h3>
-                            <p class="text-sm text-slate-500 mb-3">Talk to Your Computer</p>
-                            <p class="text-slate-300 mb-4 leading-relaxed">
-                                Speak and have text appear at your cursor — anywhere on Windows. Speech is included; no API key needed.
-                                Low-latency dictation for developers, writers, and anyone who thinks faster than they type.
-                                Free for <strong class="text-white">7 days</strong> — same installer for trial and paid. After the trial, the app asks you to buy to keep dictating.
-                            </p>
-                            <p class="text-xs text-slate-500 mb-6">
-                                Windows SmartScreen may show "Unknown publisher" on first install — this is expected for independent software.
-                            </p>
-
-                            <div class="flex flex-wrap items-center gap-3 mb-6">
-                                <a href="https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe" target="_blank" rel="noopener"
-                                   class="inline-flex items-center gap-2 px-8 py-4 bg-purple-500 text-white font-semibold rounded-2xl hover:bg-purple-400 transition-colors text-lg">
-                                    <i class="fas fa-play"></i>
-                                    Try 7 days free
-                                </a>
-                                <a href="https://buy.stripe.com/8x26oHg5U0Fn6pI8Pubo400" target="_blank" rel="noopener"
-                                   class="buy-btn inline-flex items-center gap-2 px-8 py-4 bg-purple-500/20 text-purple-300 border border-purple-500/30 font-semibold rounded-2xl hover:bg-purple-500/30 transition-colors text-lg">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Buy £14.99
-                                </a>
-                            </div>
-
-                            <div class="grid sm:grid-cols-2 gap-3 mb-6 max-w-md">
-                                <a href="https://buy.stripe.com/fZu9ATcTI87PbK26Hmbo401" target="_blank" rel="noopener"
-                                   class="price-tier featured rounded-2xl p-4 text-center buy-btn block">
-                                    <div class="text-xs uppercase tracking-wider text-purple-400 mb-1">UK Launch</div>
-                                    <div class="text-2xl font-semibold text-white">£9.99</div>
-                                </a>
-                                <a href="https://buy.stripe.com/8x26oHg5U0Fn6pI8Pubo400" target="_blank" rel="noopener"
-                                   class="price-tier rounded-2xl p-4 text-center buy-btn block">
-                                    <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">UK Full</div>
-                                    <div class="text-2xl font-semibold text-white">£14.99</div>
-                                </a>
-                            </div>
-
-                            <div class="rounded-2xl border border-slate-700 bg-slate-800/40 p-4 text-sm text-slate-300 max-w-lg">
-                                <p class="font-medium text-slate-200 mb-2">After you pay:</p>
-                                <ol class="list-decimal list-inside space-y-1 text-slate-400">
-                                    <li>Pay via Stripe (Launch or Full above)</li>
-                                    <li>Copy the license key from the thanks page</li>
-                                    <li>In xTalk: <strong class="text-slate-300">Gear → Enter license…</strong></li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Food Truth -->
-                <article id="food-truth" class="product-card x-card border rounded-3xl p-8 md:p-10">
-                    <div class="flex flex-col lg:flex-row gap-8">
-                        <div class="lg:w-2/5">
-                            <img src="images/foodtruth.jpg" alt="Food Truth app" class="w-full rounded-2xl object-cover shadow-lg border border-slate-700" style="max-height: 280px;">
-                        </div>
-                        <div class="lg:w-3/5">
-                            <div class="flex flex-wrap items-center gap-2 mb-3">
-                                <span class="px-3 py-1 bg-lime-500/10 text-lime-400 text-xs font-medium rounded-full">UK Supermarkets</span>
-                                <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Buy / Avoid Guide</span>
-                            </div>
-                            <h3 class="font-display text-3xl font-semibold mb-3">Food Truth</h3>
-                            <p class="text-slate-300 mb-4 leading-relaxed">
-                                A practical UK supermarket buy/avoid guide. Staples like eggs, butter, milk, bread, and cheddar are free —
-                                unlock the full guide for everything else.
-                            </p>
-                            <p class="text-xs text-slate-500 mb-6">
-                                Informational guide only — not medical advice.
-                            </p>
-
-                            <div class="flex flex-wrap items-center gap-4 mb-4">
-                                <a href="https://buy.stripe.com/aFadR95rg2NvdSac1Gbo403" target="_blank" rel="noopener"
-                                   class="buy-btn inline-flex items-center gap-2 px-8 py-4 bg-lime-500 text-slate-900 font-semibold rounded-2xl hover:bg-lime-400 transition-colors text-lg">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    Buy full guide — £3.99
-                                </a>
-                                <a href="https://cyberbob4269.github.io/food-truth/" target="_blank" rel="noopener"
-                                   class="text-lime-400 hover:text-lime-300 font-medium text-sm">
-                                    <i class="fas fa-external-link-alt mr-1"></i> Try free staples in the app
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-
-            <p class="mt-10 text-center text-xs text-slate-500">
-                Sold by <strong class="text-slate-400">Netwrx Solutions Limited</strong> (UK) · Skunk Foundry · Payments via Stripe
-            </p>
+      </article>
+      <article class="card prod" id="food-truth">
+        <img src="designs/assets/foodtruth.webp" width="640" height="692" loading="lazy" alt="Food Truth app on a phone" style="object-position:50% 20%">
+        <div class="body">
+          <div class="chips"><span class="chip">UK supermarkets</span><span class="chip">Buy / avoid</span></div>
+          <h3>Food Truth</h3>
+          <p class="muted">A practical UK supermarket buy/avoid guide. Staples like eggs, butter, milk, bread and cheddar are free. <a href="https://cyberbob4269.github.io/food-truth/" target="_blank" rel="noopener">Try the free staples</a>.</p>
+          <p class="small">Informational guide only, not medical advice.</p>
+          <div class="buys">
+            <a class="buy feat" href="https://buy.stripe.com/aFadR95rg2NvdSac1Gbo403" target="_blank" rel="noopener"><span class="k">Full guide</span><span class="v">£3.99</span></a>
+          </div>
         </div>
-    </section>
-
-    <!-- Citizen Science (Free) -->
-    <section id="citizen-science" class="max-w-7xl mx-auto px-6 py-20">
-        <div class="text-center mb-12">
-            <div class="inline-block px-4 py-1.5 bg-slate-800 text-emerald-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">FREE &amp; OPEN</div>
-            <h2 class="section-header">Citizen Science</h2>
-            <p class="mt-4 max-w-md mx-auto text-slate-400">Astronomy platforms built for real discovery — free to use. Optional donation appreciated.</p>
+      </article>
+      <article class="card prod" id="stacksweep">
+        <div class="ss-art" aria-hidden="true"><div><span>£699</span><br><span class="muted" style="font-size:1rem;font-family:system-ui,sans-serif;font-weight:500">fixed fee, no surprises</span></div></div>
+        <div class="body">
+          <div class="chips"><span class="chip">Consulting</span><span class="chip">Teams of 5 to 50</span></div>
+          <h3>StackSweep</h3>
+          <p class="muted">Find the software and AI subscriptions you pay for but don't use. You get a ranked cancel/keep list with a savings estimate and a 30 to 45 minute Teams readout.</p>
+          <p class="small">Typically recovers the fee; if not, we credit it toward Netwrx consulting within 60 days.</p>
+          <div class="buys">
+            <a class="buy feat" href="https://buy.stripe.com/28EeVd5rgco54hAfdSbo40c" target="_blank" rel="noopener"><span class="k">Book StackSweep</span><span class="v">£699</span></a>
+          </div>
         </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
-                <img src="images/cosmic-pulse-orbit.png" alt="Cosmic Pulse orbit visualization" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 200px;">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-medium rounded-full">Free</div>
-                    <i class="fas fa-globe text-emerald-400"></i>
-                </div>
-                <h4 class="font-semibold text-xl mb-2">Vera@Home / Cosmic Pulse</h4>
-                <p class="text-slate-400 text-sm flex-1">LSST broker ingest, real-time dashboard, and Deep Space 3D visualization. Community-driven astronomy infrastructure.</p>
-                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                    <span class="text-emerald-400 font-medium">Open source</span>
-                    <a href="https://github.com/cyberbob4269/vera-home-local" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
-                </div>
-            </div>
+<section class="alt" id="starlink" aria-labelledby="sl-h">
+  <div class="wrap">
+    <div class="kicker"><b>05</b>Field work · Starlink installs</div>
+    <h2 id="sl-h">Starlink, fitted properly.</h2>
+    <p class="lead">From £40 a month you pay Starlink; we fit the kit you own. Independent installer, not Starlink, SpaceX or Satworks. A booked visit, not a download.</p>
+    <div class="sl-grid">
+      <a class="card tier" href="https://buy.stripe.com/dRm14n7zo4VDdSaaXCbo409" target="_blank" rel="noopener"><span class="nm">Wall / fascia</span><span class="pr">£299</span><span>Single-storey, short cable, kit on site.</span><span class="btn btn-line" style="margin-top:auto">Buy now</span></a>
+      <a class="card tier feat" href="https://buy.stripe.com/cNi3cv1b0co57tM4zebo40a" target="_blank" rel="noopener"><span class="nm">Typical house</span><span class="pr">£349</span><span>Two-storey or longer run.</span><span class="btn btn-white" style="margin-top:auto">Buy now</span></a>
+      <a class="card tier" href="https://buy.stripe.com/eVq14ndXMgEl01kc1Gbo40b" target="_blank" rel="noopener"><span class="nm">Roof / complex</span><span class="pr">£449</span><span>Roof, pole, chimney, awkward access.</span><span class="btn btn-line" style="margin-top:auto">Buy now</span></a>
+    </div>
+    <p style="margin-top:28px"><a href="https://wa.me/447913300361?text=Starlink%20sky-check">WhatsApp a sky-check →</a></p>
+  </div>
+</section>
 
-            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
-                <img src="images/tess-neighborhood.png" alt="Neo-Watch TESS visualization" class="w-full rounded-2xl mb-4 object-cover shadow-lg" style="max-height: 200px;">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="px-3 py-1 bg-indigo-500/10 text-indigo-400 text-xs font-medium rounded-full">Free</div>
-                    <i class="fas fa-meteor text-indigo-400"></i>
-                </div>
-                <h4 class="font-semibold text-xl mb-2">Neo-Watch</h4>
-                <p class="text-slate-400 text-sm flex-1">Daily Near-Earth Object reports with images, designed to integrate with Cosmic Pulse.</p>
-                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                    <span class="text-indigo-400 font-medium">Public</span>
-                    <a href="https://github.com/cyberbob4269/neo-watch" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
-                </div>
-            </div>
-        </div>
+<section id="contact" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div class="kicker"><b>06</b>Talk to a human</div>
+    <h2 id="ct-h">Let's put AI to work <span class="grad">in your business.</span></h2>
+    <p class="lead">Support, custom builds or quotes. You'll get Scott, not a call centre.</p>
+    <div class="big-links">
+      <a href="mailto:scott@netwrxsolutions.com">scott@netwrxsolutions.com<span>Email</span></a>
+      <a href="tel:07913300361">07913 300361<span>Phone / WhatsApp</span></a>
+      <a href="mailto:skunk-foundry@mail.grokbot.com">skunk-foundry@mail.grokbot.com<span>Skunk Foundry</span></a>
+    </div>
+  </div>
+</section>
+</main>
 
-        <div class="mt-10 text-center">
-            <p class="text-slate-400 text-sm mb-4">Enjoy the citizen-science work? Optional donation helps keep servers running.</p>
-            <a href="https://monzo.com/pay/r/netwrxsolutions-limited_At12CO7NiFTnlo" target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 px-6 py-3 border border-slate-700 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">
-                <i class="fas fa-heart text-rose-400"></i>
-                Donate via Monzo (optional)
-            </a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="bg-slate-900 border-t border-slate-800 py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <div class="inline-block px-4 py-1.5 bg-slate-800 text-sky-400 text-xs font-semibold tracking-[2px] rounded-full mb-4">CONSULTING</div>
-                <h2 class="section-header">Infrastructure, Intelligence &amp; Innovation</h2>
-                <p class="mt-4 max-w-md mx-auto text-slate-400">Need something bespoke? Custom networks, AI deployment, and science platforms — engineered for production.</p>
-            </div>
-
-            <!-- StackSweep -->
-            <article id="stacksweep" class="product-card x-card border rounded-3xl p-8 md:p-10 mb-10" aria-label="StackSweep consulting product">
-                <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="lg:w-2/5 flex items-center justify-center">
-                        <div class="w-full rounded-2xl border border-amber-500/30 bg-amber-500/5 p-10 text-center shadow-lg" style="max-height: 280px;" aria-hidden="true">
-                            <div class="w-20 h-20 mx-auto bg-amber-500/10 text-amber-400 rounded-2xl flex items-center justify-center mb-4">
-                                <i class="fas fa-layer-group text-4xl"></i>
-                            </div>
-                            <p class="text-amber-400 font-semibold text-lg">StackSweep</p>
-                            <p class="text-slate-400 text-sm mt-1">Fixed-fee UK SME clean-up</p>
-                        </div>
-                    </div>
-                    <div class="lg:w-3/5">
-                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="px-3 py-1 bg-amber-500/10 text-amber-400 text-xs font-medium rounded-full">Consulting</span>
-                            <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">Skunk Foundry</span>
-                            <span class="px-3 py-1 bg-slate-800 text-slate-400 text-xs font-medium rounded-full">UK SMEs</span>
-                        </div>
-                        <h3 class="font-display text-3xl font-semibold mb-2">StackSweep</h3>
-                        <p class="text-slate-300 mb-4 leading-relaxed">
-                            Find the software and AI subscriptions you are paying for but not using.
-                        </p>
-                        <p class="text-slate-300 mb-4 leading-relaxed">
-                            Most small UK teams carry two or three tools that do the same job, plus subscriptions for people who left.
-                            StackSweep is a fixed-fee clean-up: inventory what you pay, flag overlaps, and deliver a ranked cancel/keep list
-                            with a pounds savings estimate. You get a spreadsheet, an action list, and a 30–45 minute UK Teams readout.
-                            No agents installed on your PCs.
-                        </p>
-                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                            Typically recovers the fee; if not, we credit the amount toward Netwrx consulting within 60 days.
-                            You own every cancel decision. Built for teams of about 5–50 — not sole traders or enterprises with a procurement desk.
-                        </p>
-
-                        <div class="flex flex-wrap items-center gap-3 mb-6">
-                            <a href="https://buy.stripe.com/28EeVd5rgco54hAfdSbo40c" target="_blank" rel="noopener"
-                               class="buy-btn inline-flex items-center gap-2 px-8 py-4 bg-amber-500 text-slate-900 font-semibold rounded-2xl hover:bg-amber-400 transition-colors text-lg"
-                               aria-label="Book StackSweep for £699">
-                                <i class="fas fa-calendar-check" aria-hidden="true"></i>
-                                Book StackSweep (£699)
-                            </a>
-                            <a href="mailto:scott@netwrxsolutions.com"
-                               class="text-amber-400 hover:text-amber-300 font-medium text-sm">
-                                Questions? scott@netwrxsolutions.com
-                            </a>
-                        </div>
-
-                        <div class="rounded-2xl border border-slate-700 bg-slate-800/40 p-4 text-sm text-slate-300 max-w-lg">
-                            <p class="font-medium text-slate-200 mb-2">After you pay:</p>
-                            <ol class="list-decimal list-inside space-y-1 text-slate-400">
-                                <li>Intake email asks for 90-day bank/card CSV and read-only admin screenshots</li>
-                                <li>Book your UK Teams readout</li>
-                                <li>No passwords required</li>
-                            </ol>
-                            <p class="mt-2 text-xs text-slate-500">Sold by <strong class="text-slate-400">Netwrx Solutions Limited</strong> · Skunk Foundry · Payments via Stripe</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="service-card x-card border rounded-3xl p-8">
-                    <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-network-wired text-3xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-3">Network &amp; Infrastructure</h3>
-                    <p class="text-slate-400 mb-6">Starlink dish installs, site rollouts, fiber, Wi-Fi, Cisco, EPoS/ATM across the UK &amp; Europe.</p>
-                    <a href="#starlink" class="text-sky-400">Starlink install →</a>
-                </div>
-
-                <div class="service-card x-card border rounded-3xl p-8">
-                    <div class="w-12 h-12 bg-violet-500/10 text-violet-400 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-robot text-3xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-3">AI Infrastructure</h3>
-                    <p class="text-slate-400 mb-6">Local LLMs, on-prem AI deployment, automation agents, and edge computing.</p>
-                </div>
-
-                <div class="service-card x-card border rounded-3xl p-8">
-                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-code text-3xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold mb-3">Custom Software</h3>
-                    <p class="text-slate-400 mb-6">Python tooling, workflow automation, and production-ready connectors.</p>
-                </div>
-            </div>
-
-            <div class="mt-10 text-center">
-                <a href="#contact" class="inline-flex items-center px-6 py-3 text-sm font-medium bg-white text-slate-900 rounded-2xl hover:bg-slate-100 transition-colors">
-                    Request a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section -->
-    <section id="projects" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-800">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
-            <div>
-                <div class="text-sky-400 text-sm font-semibold tracking-[2px]">PORTFOLIO</div>
-                <h2 class="section-header mt-2">More Projects</h2>
-            </div>
-            <a href="https://github.com/cyberbob4269" target="_blank" rel="noopener"
-               class="mt-4 md:mt-0 inline-flex items-center text-sm font-medium text-sky-400 hover:text-sky-300 transition-colors">
-                View all on GitHub <i class="fas fa-external-link-alt ml-2 text-xs"></i>
-            </a>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="px-3 py-1 bg-rose-500/10 text-rose-400 text-xs font-medium rounded-full">Research</div>
-                    <i class="fas fa-flask text-rose-400"></i>
-                </div>
-                <h4 class="font-semibold text-xl mb-2">Peptide Research Hub</h4>
-                <p class="text-slate-400 text-sm flex-1">Documentation, calculators, experiment templates, and bi-weekly research reports.</p>
-                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                    <span class="text-rose-400 font-medium">Private</span>
-                    <a href="https://github.com/cyberbob4269/peptide-research-hub" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
-                </div>
-            </div>
-
-            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-xs font-medium rounded-full">AI Platform</div>
-                    <i class="fas fa-microchip text-cyan-400"></i>
-                </div>
-                <h4 class="font-semibold text-xl mb-2">xai-mcp-server</h4>
-                <p class="text-slate-400 text-sm flex-1">Unified FastAPI MCP server with Grok, X search, voice agents, and connected services.</p>
-                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                    <span class="text-cyan-400 font-medium">Private</span>
-                    <a href="https://github.com/cyberbob4269/xai-mcp-server" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
-                </div>
-            </div>
-
-            <div class="project-card x-card border rounded-3xl p-7 flex flex-col">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="px-3 py-1 bg-orange-500/10 text-orange-400 text-xs font-medium rounded-full">Automation</div>
-                    <i class="fas fa-cogs text-orange-400"></i>
-                </div>
-                <h4 class="font-semibold text-xl mb-2">Automation Skills</h4>
-                <p class="text-slate-400 text-sm flex-1">Reusable automation skills and workflows for reliable, repeatable processes.</p>
-                <div class="mt-5 pt-5 border-t border-slate-800 flex items-center justify-between text-xs">
-                    <span class="text-orange-400 font-medium">Private</span>
-                    <a href="https://github.com/cyberbob4269/automation-skills" target="_blank" rel="noopener" class="font-medium text-sky-400 hover:text-sky-300">GitHub →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="border-t border-slate-800 bg-slate-900 py-16">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="section-header mb-6">Built with intention in the UK</h2>
-            <p class="text-lg text-slate-300 max-w-2xl mx-auto">
-                <strong class="text-white">NetwrxSolutions Ltd</strong> is the company. <strong class="text-white">Skunk Foundry</strong> is the software brand.
-                From sellable tools to citizen-science platforms and enterprise infrastructure — everything is engineered for real-world use.
-            </p>
-            <p class="mt-4 text-slate-400">Scott Kellock — UK</p>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="max-w-3xl mx-auto px-6 py-20 text-center">
-        <h2 class="section-header mb-4">Questions before you buy?</h2>
-        <p class="text-xl text-slate-300 mb-8">Product support, custom development, or infrastructure quotes — get in touch.</p>
-        
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:scott@netwrxsolutions.com" 
-               class="px-8 py-4 bg-white text-slate-900 font-semibold rounded-3xl hover:bg-slate-100 transition-all inline-flex items-center justify-center gap-x-3 text-lg">
-                <i class="fas fa-envelope"></i>
-                <span>scott@netwrxsolutions.com</span>
-            </a>
-            <a href="https://github.com/cyberbob4269" target="_blank" rel="noopener"
-               class="px-8 py-4 border border-slate-600 hover:bg-slate-800 font-semibold rounded-3xl transition-all inline-flex items-center justify-center gap-x-3 text-lg">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </a>
-        </div>
-        
-        <p class="mt-8 text-xs text-slate-500">
-            NETWRXSOLUTIONS LIMITED • UK • Skunk Foundry software brand
-        </p>
-    </section>
-
-    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-        <p>© 2026 NETWRXSOLUTIONS LIMITED. All rights reserved.</p>
-        <p class="mt-2">Food Truth is an informational guide, not medical advice.</p>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+<footer>
+  <div class="wrap">
+    <p>Skunk Foundry is the AI studio of NETWRXSOLUTIONS LIMITED, Dundee, UK. © 2026.</p>
+    <p>Voice assistant powered by Grok from SpaceX AI. Skunk Foundry is independent and not affiliated with SpaceX. Food Truth is an informational guide, not medical advice.</p>
+  </div>
+</footer>
 </body>
 </html>
