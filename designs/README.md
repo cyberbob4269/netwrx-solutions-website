@@ -14,6 +14,6 @@ All three share the same content: Virtual Assistant tiers, early-bird add-ons, L
 
 - Pages are marked `noindex` so search engines don't treat them as duplicates of the live site.
 - Imagery: no xAI (Grok Imagine) API key was available when these were built, so extra art is CSS/SVG plus WebP crops of the existing brand and product images in `assets/`. Swap in Grok Imagine renders later by replacing files in `assets/`.
-- Accessibility: 20px base text, contrast at or above 7:1 for text, visible focus rings, skip link, `prefers-reduced-motion` turns off all animation.
+- Accessibility: standard studio typography (17px body), text contrast meets WCAG AA (4.5:1 or better), visible focus rings, skip link, `prefers-reduced-motion` turns off all animation.
 - No Tailwind or Font Awesome CDNs; each page is a single HTML file with inline CSS and one web font.
 - `assets/referral.js` keeps the PromoteKit referral tagging on Stripe links, as on the live site.
