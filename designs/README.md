@@ -17,3 +17,4 @@ All three share the same content: Virtual Assistant tiers, early-bird add-ons, L
 - Accessibility: standard studio typography (17px body), text contrast meets WCAG AA (4.5:1 or better), visible focus rings, skip link, `prefers-reduced-motion` turns off all animation.
 - No Tailwind or Font Awesome CDNs; each page is a single HTML file with inline CSS and one web font.
 - `assets/referral.js` keeps the PromoteKit referral tagging on Stripe links, as on the live site.
+- LetReady links point to https://getletready.co.uk/.
