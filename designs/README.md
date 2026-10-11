@@ -6,7 +6,7 @@ Three standalone homepage concepts for www.netwrxsolutions.com. The live `index.
 |---|---|---|
 | `a-website/` | Current site content and structure, elevated with one navy and sky-blue palette | `/designs/a-website/` |
 | `b-brand-art/` | Built from the Skunk Foundry brand art: soot black, signal yellow, molten glow, blueprint plates | `/designs/b-brand-art/` |
-| `c-freestyle/` | Paper-and-ink studio look with cobalt and highlighter yellow, live call-screen demo in the hero | `/designs/c-freestyle/` |
+| `c-freestyle/` | Dark-mode AI studio look: skunk mascot hero with a live call card, "Powered by SpaceX AI · Grok voice", indigo-to-cyan accents | `/designs/c-freestyle/` |
 
 All three share the same content: Virtual Assistant tiers, early-bird add-ons, LetReady, the existing software with unchanged Stripe links, Starlink installs and contacts.
 
