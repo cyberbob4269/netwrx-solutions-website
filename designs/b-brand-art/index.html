@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Design B · Skunk Foundry | Built in the quiet. Delivers in the real world.</title>
+<meta name="description" content="Skunk Foundry, the software studio of NetwrxSolutions Ltd. Virtual phone assistant, LetReady landlord reminders, ready-to-run software and Starlink installs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&display=swap">
+<link rel="preload" as="image" href="../assets/skunk-scene-1536.webp" media="(min-width: 801px)">
+<link rel="preload" as="image" href="../assets/skunk-scene-800.webp" media="(min-width: 601px) and (max-width: 800px)">
+<link rel="preload" as="image" href="../assets/skunk-portrait-560.webp" media="(max-width: 600px)">
+<style>
+:root{
+  --soot:#0a0806;--iron:#14100c;--plate:#1d1712;--line:#54473a;
+  --bone:#f7f1e6;--dust:#bdb09c;--signal:#ffd60a;--molten:#ff7a1a;
+  --cond:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;
+  --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--soot);color:var(--bone);font:400 1.0625rem/1.65 system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--signal);text-underline-offset:.2em}
+a:hover{color:#fff}
+:focus-visible{outline:4px solid var(--signal);outline-offset:3px}
+h1,h2,h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;line-height:1;margin:0 0 .4em;letter-spacing:.01em}
+h2{font-size:clamp(2.4rem,5vw,4rem)}
+h3{font-size:clamp(1.6rem,2.4vw,2rem)}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.y{color:var(--signal)}
+.dust{color:var(--dust)}
+.skip{position:absolute;left:-999px;top:0;background:var(--signal);color:#000;padding:12px 18px;font-weight:700;z-index:100}
+.skip:focus{left:12px;top:12px}
+.bp{background-color:var(--iron);background-image:linear-gradient(rgba(255,214,10,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,214,10,.045) 1px,transparent 1px);background-size:44px 44px}
+section{padding:96px 0;border-top:2px solid var(--line);position:relative}
+.label{font-family:var(--cond);font-weight:600;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dust)}
+.lead{font-size:1.2rem;max-width:48ch;color:var(--dust)}
+
+/* blueprint plate (section header) */
+.plate{position:relative;border:2px solid var(--line);padding:18px 22px;margin-bottom:36px;display:inline-grid;gap:2px;background:rgba(10,8,6,.6)}
+.plate::before,.plate::after{content:"";position:absolute;width:18px;height:18px;border:3px solid var(--signal)}
+.plate::before{top:-3px;left:-3px;border-right:0;border-bottom:0}
+.plate::after{bottom:-3px;right:-3px;border-left:0;border-top:0}
+.plate span{font-family:var(--cond);font-weight:600;font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase}
+.plate b{color:var(--signal);font-weight:600}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:10px 26px;font-family:var(--cond);font-weight:800;font-size:1.3rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:3px solid var(--signal);transition:background-color .15s ease,color .15s ease}
+.btn-y{background:var(--signal);color:var(--soot)}
+.btn-y:hover{background:var(--bone);border-color:var(--bone);color:var(--soot)}
+.btn-o{color:var(--bone);background:transparent}
+.btn-o:hover{background:var(--signal);color:var(--soot)}
+.btns{display:flex;flex-wrap:wrap;gap:16px}
+svg.i{width:1.1em;height:1.1em;flex:none}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(10,8,6,.96);border-bottom:2px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--bone);text-decoration:none;flex:none}
+.brand img{width:44px;height:44px;border:2px solid var(--signal)}
+.brand b{font-family:var(--cond);font-weight:800;font-size:1.65rem;letter-spacing:.04em;line-height:1}
+.brand small{display:block;font-family:var(--cond);font-weight:600;font-size:.85rem;letter-spacing:.3em;color:var(--dust)}
+.links{display:none;list-style:none;margin:0;padding:0;gap:28px}
+.links a{font-family:var(--cond);font-weight:600;font-size:1.2rem;letter-spacing:.08em;text-transform:uppercase;color:var(--bone);text-decoration:none;white-space:nowrap}
+.links a:hover{color:var(--signal);text-decoration:underline}
+.nav-cta{display:none;min-height:44px;font-size:1.15rem;padding:8px 20px;white-space:nowrap}
+.menu summary{list-style:none;cursor:pointer;font-family:var(--cond);font-weight:800;font-size:1.25rem;letter-spacing:.1em;text-transform:uppercase;border:3px solid var(--signal);padding:6px 18px}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{background:var(--signal);color:var(--soot)}
+.menu ul{position:absolute;left:0;right:0;top:100%;background:var(--soot);border-bottom:2px solid var(--line);list-style:none;margin:0;padding:8px 24px 24px}
+.menu li a{display:block;padding:12px 0;font-family:var(--cond);font-weight:800;font-size:1.5rem;text-transform:uppercase;color:var(--bone);text-decoration:none;border-bottom:1px solid var(--line)}
+@media (min-width:1200px){.links,.nav-cta{display:flex}.menu{display:none}}
+
+/* hero */
+.hero{border-top:0;padding:0;overflow:hidden;background:var(--soot)}
+.hero .art{position:relative}
+.hero .art img{width:100%;height:auto;max-height:78vh;object-fit:cover;object-position:50% 25%}
+.hero .art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,0) 50%,rgba(10,8,6,.85) 85%,var(--soot) 100%)}
+.hero .wrap{position:relative;z-index:2;margin-top:-10vw;padding-bottom:64px;text-align:center}
+.hero h1{font-size:clamp(4rem,12vw,9.5rem);line-height:.9;margin:0;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.rule{display:flex;align-items:center;justify-content:center;gap:20px;margin:14px 0 26px;font-family:var(--cond);font-weight:600;font-size:clamp(1.15rem,2vw,1.6rem);letter-spacing:.35em}
+.rule::before,.rule::after{content:"";height:3px;width:min(140px,14vw);background:var(--signal)}
+.tagline{font-family:var(--cond);font-weight:600;font-size:clamp(1.3rem,2.4vw,1.85rem);letter-spacing:.06em;text-transform:uppercase;margin-bottom:32px}
+.hero .btns{justify-content:center}
+.sparks{position:absolute;right:24%;top:20%;width:160px;height:300px;z-index:1;pointer-events:none}
+.sparks i{position:absolute;bottom:0;width:4px;height:4px;border-radius:50%;background:var(--molten);box-shadow:0 0 8px 2px rgba(255,122,26,.8);animation:rise 2.6s linear infinite;opacity:0}
+.sparks i:nth-child(2){left:30%;animation-delay:.4s}.sparks i:nth-child(3){left:55%;animation-delay:.9s}
+.sparks i:nth-child(4){left:75%;animation-delay:1.4s}.sparks i:nth-child(5){left:15%;animation-delay:1.9s}.sparks i:nth-child(6){left:90%;animation-delay:2.2s}
+@keyframes rise{0%{transform:translate(0,0);opacity:0}10%{opacity:1}100%{transform:translate(-30px,-240px);opacity:0}}
+
+/* assistant */
+.va-grid{display:grid;gap:48px;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center}
+.callbox{border:3px solid var(--signal);padding:30px;background:var(--soot);box-shadow:0 0 60px rgba(255,122,26,.18)}
+.callbox .label{color:var(--signal)}
+.callbox a.num{display:block;font-family:var(--cond);font-weight:800;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1;color:var(--bone);text-decoration:none;margin:8px 0 12px;letter-spacing:.02em}
+.callbox a.num:hover{color:var(--signal)}
+.tiers{display:grid;gap:22px;grid-template-columns:repeat(3,1fr);margin-top:56px}
+.spec{border:2px solid var(--line);background:var(--plate);padding:28px;display:flex;flex-direction:column}
+.spec.hot{border-color:var(--signal);box-shadow:inset 0 0 0 1px var(--signal)}
+.spec .label{color:var(--signal)}
+.spec .price{font-family:var(--cond);font-weight:800;font-size:3.4rem;line-height:1;margin:8px 0}
+.spec .price small{font-size:1.2rem;color:var(--dust);font-weight:600}
+.spec dl{margin:16px 0 26px;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:1rem}
+.spec dt{font-family:var(--cond);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dust)}
+.spec dd{margin:0}
+.spec .btn{margin-top:auto;font-size:1.2rem}
+.stamp{display:inline-block;align-self:flex-start;font-family:var(--cond);font-weight:800;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soot);background:var(--signal);padding:2px 12px}
+
+/* add-ons work order */
+.order{width:100%;border-collapse:collapse;font-size:1rem}
+.order th{font-family:var(--cond);font-weight:600;font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;text-align:left;color:var(--dust);border-bottom:3px solid var(--signal);padding:12px 14px}
+.order td{padding:18px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.order td:first-child{font-family:var(--cond);font-weight:800;font-size:1.4rem;text-transform:uppercase;line-height:1.1;white-space:nowrap}
+.order td:last-child{font-family:var(--cond);font-weight:800;font-size:1.35rem;color:var(--signal);white-space:nowrap;text-align:right}
+.order td:last-child small{display:block;font-family:system-ui,sans-serif;font-weight:400;font-size:.85rem;color:var(--dust)}
+@media (max-width:760px){
+  .order thead{display:none}
+  .order tr{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid var(--line);padding:14px 0}
+  .order td{border:0;padding:4px 0}
+  .order td:nth-child(2){grid-column:1/-1;grid-row:2}
+  .order td:first-child{white-space:normal}
+}
+
+/* letready */
+.lr{display:grid;gap:48px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+.board{border:2px solid var(--line);background:var(--soot);padding:26px;font-family:var(--cond);font-size:1.35rem;letter-spacing:.06em;text-transform:uppercase}
+.board div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.board div:last-child{border:0}
+.ok{color:#a6f0c0}.due{color:var(--signal)}.late{color:#ff9f6b}
+.ticks{list-style:none;padding:0;margin:0 0 30px;font-size:1.1rem}
+.ticks li{padding:10px 0 10px 40px;position:relative;border-bottom:1px solid var(--line)}
+.ticks li::before{content:"";position:absolute;left:4px;top:.85em;width:18px;height:10px;border-left:4px solid var(--signal);border-bottom:4px solid var(--signal);transform:rotate(-45deg)}
+
+/* manifesto */
+.manifesto{background:var(--soot);text-align:center;padding:80px 0}
+.manifesto p{font-family:var(--cond);font-weight:800;font-size:clamp(2.2rem,5.6vw,4.4rem);line-height:1;text-transform:uppercase;margin:0}
+
+/* shop */
+.prod{display:grid;gap:36px;grid-template-columns:minmax(0,5fr) minmax(0,7fr);border:2px solid var(--line);background:var(--plate);padding:30px;margin-top:28px}
+.prod img{width:100%;aspect-ratio:1/1;object-fit:cover;border:2px solid var(--line);filter:saturate(.9) contrast(1.05)}
+.prod .meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:10px}
+.buys{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0}
+.buy{display:flex;flex-direction:column;min-width:150px;padding:12px 20px;border:2px solid var(--line);color:var(--bone);text-decoration:none;background:var(--soot)}
+.buy:hover,.buy.hot{border-color:var(--signal);color:var(--bone)}
+.buy .label{font-size:.95rem}
+.buy .v{font-family:var(--cond);font-weight:800;font-size:2.1rem;line-height:1}
+.small{font-size:.9rem;color:var(--dust)}
+.steps{font-size:.95rem;color:var(--dust);padding-left:1.4em;margin:14px 0 0}
+@media (max-width:900px){.va-grid,.lr,.prod{grid-template-columns:1fr}.tiers{grid-template-columns:1fr}}
+
+/* starlink */
+.sl-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+a.spec{color:var(--bone);text-decoration:none}
+a.spec > span:nth-child(3){padding-bottom:22px}
+a.spec:hover{border-color:var(--signal)}
+
+/* contact */
+.doors{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.doors a{display:block;border:2px solid var(--line);padding:22px;background:var(--plate);color:var(--bone);text-decoration:none;font-size:1.1rem;font-weight:700;word-break:break-word}
+.doors a .label{display:block;color:var(--signal);font-size:1rem}
+.doors a:hover{border-color:var(--signal)}
+footer{border-top:2px solid var(--line);padding:40px 0;text-align:center;color:var(--dust);font-size:.9rem}
+footer .tag{font-family:var(--cond);font-weight:800;font-size:1.5rem;text-transform:uppercase;color:var(--bone);letter-spacing:.06em}
+
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .brand img{width:42px;height:42px}
+  .brand b{font-size:1.35rem}
+  .brand small{font-size:.8rem;letter-spacing:.2em}
+  .prod,.spec,.callbox{padding:20px}
+  .btn{font-size:1.15rem;padding:10px 18px}
+  .sparks{display:none}
+  .rule{letter-spacing:.18em;font-size:1.05rem;gap:12px}
+  .rule::before,.rule::after{width:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sparks{display:none}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+<script async src="https://cdn.promotekit.com/pk.js" data-promotekit="0ddb0ebd-dbf3-4aa7-b44b-b068648ed9f6"></script>
+<script defer src="../assets/referral.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Skunk Foundry home">
+      <img src="../assets/skunk-mark-128.webp" width="50" height="50" alt="">
+      <span><b>SKUNK <span class="y">FOUNDRY</span></b><small>NETWRX SOLUTIONS</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="links">
+        <li><a href="#assistant">Assistant</a></li>
+        <li><a href="#addons">Add-ons</a></li>
+        <li><a href="#letready">LetReady</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#starlink">Starlink</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <details class="menu">
+        <summary>Menu</summary>
+        <ul>
+          <li><a href="#assistant">Virtual Assistant</a></li>
+          <li><a href="#addons">Early-bird add-ons</a></li>
+          <li><a href="#letready">LetReady</a></li>
+          <li><a href="#shop">Software shop</a></li>
+          <li><a href="#starlink">Starlink installs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
+    </nav>
+    <a class="btn btn-y nav-cta" href="tel:07888867893"><svg class="i"><use href="#i-phone"/></svg>07888 867893</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="art">
+    <picture>
+      <source media="(max-width: 600px)" srcset="../assets/skunk-portrait-560.webp" width="560" height="560">
+      <source media="(max-width: 800px)" srcset="../assets/skunk-scene-800.webp">
+      <img src="../assets/skunk-scene-1536.webp" width="1536" height="690" alt="A skunk in welding goggles stands arms folded in a dark foundry, molten metal pouring behind him, blueprints on the wall." fetchpriority="high">
+    </picture>
+    <div class="sparks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+  <div class="wrap">
+    <h1 id="hero-h">Skunk <span class="y">Foundry</span></h1>
+    <div class="rule">NETWRX SOLUTIONS</div>
+    <p class="tagline">Built in the quiet. <span class="y">Delivers in the real world.</span></p>
+    <div class="btns">
+      <a class="btn btn-y" href="tel:07888867893"><svg class="i"><use href="#i-phone"/></svg><span>Call the assistant: <span style="white-space:nowrap">07888 867893</span></span></a>
+      <a class="btn btn-o" href="#shop">Enter the shop</a>
+    </div>
+  </div>
+</section>
+
+<section class="bp" id="assistant" aria-labelledby="va-h">
+  <div class="wrap">
+    <div class="plate"><span>Project: <b>Virtual Assistant</b></span><span>Status: <b>Live now</b></span><span>Method: <b>Never miss a call</b></span></div>
+    <div class="va-grid">
+      <div>
+        <h2 id="va-h">Your phone, <span class="y">answered.</span></h2>
+        <p class="lead">An AI assistant picks up when you can't, takes the message, and texts you the caller's name, reason and urgency. Built for letting agents, landlords, trades, salons and small offices.</p>
+      </div>
+      <div class="callbox">
+        <div class="label">Try it now: call</div>
+        <a class="num" href="tel:07888867893">07888 867893</a>
+        <p style="margin:0">Hear it answer live. <strong class="y">First 30 days free</strong> on every plan.</p>
+      </div>
+    </div>
+    <div class="tiers">
+      <article class="spec">
+        <span class="label">Personal</span>
+        <div class="price">£14.99<small> /month</small></div>
+        <span class="stamp">First 30 days free</span>
+        <dl><dt>For</dt><dd>Sole traders, landlords</dd><dt>Does</dt><dd>Answers 24/7, texts and emails you</dd><dt>Number</dt><dd>Mobile or local</dd></dl>
+        <a class="btn btn-o" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Personal%20free%20trial">Start free trial</a>
+      </article>
+      <article class="spec hot">
+        <span class="label">Business</span>
+        <div class="price">£29<small> /month</small></div>
+        <span class="stamp">First 30 days free</span>
+        <dl><dt>For</dt><dd>Shops, salons, trades</dd><dt>Does</dt><dd>Knows your business and FAQs</dd><dt>Plus</dt><dd>Urgent calls flagged at once</dd></dl>
+        <a class="btn btn-y" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Business%20free%20trial">Start free trial</a>
+      </article>
+      <article class="spec">
+        <span class="label">Team</span>
+        <div class="price">£49<small> /month</small></div>
+        <span class="stamp">First 30 days free</span>
+        <dl><dt>For</dt><dd>Offices, letting agents</dd><dt>Does</dt><dd>Routes messages to the right person</dd><dt>Plus</dt><dd>Everything in Business</dd></dl>
+        <a class="btn btn-o" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Team%20free%20trial">Start free trial</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="addons" aria-labelledby="ao-h">
+  <div class="wrap">
+    <div class="plate"><span>Work order: <b>Early-bird add-ons</b></span><span>Status: <b>Taking early customers</b></span><span>Price lock: <b>First 12 months</b></span></div>
+    <h2 id="ao-h">Bolt on <span class="y">more muscle.</span></h2>
+    <p class="lead">Start with the phone assistant, then add what you need. Early-bird prices stay locked for your first 12 months.</p>
+    <table class="order">
+      <caption class="label" style="text-align:left;caption-side:top;margin-bottom:8px">Add-on list, monthly unless stated</caption>
+      <thead><tr><th scope="col">Add-on</th><th scope="col">What it does</th><th scope="col" style="text-align:right">Early-bird</th></tr></thead>
+      <tbody>
+        <tr><td>Email assistant</td><td>Sorts your inbox, drafts replies to common questions, flags urgent ones.</td><td>£7.99<small>£14.99 standalone</small></td></tr>
+        <tr><td>Google reviews</td><td>Asks happy customers for a review and drafts replies to new ones.</td><td>£4.99<small>£9.99 standalone</small></td></tr>
+        <tr><td>Lead follow-up</td><td>Every enquiry chased within minutes, not days.</td><td>£7.99<small>£14.99 standalone</small></td></tr>
+        <tr><td>Booking and reminders</td><td>Appointments into your calendar, text reminders to cut no-shows.</td><td>£7.99<small>add-on</small></td></tr>
+        <tr><td>Website chat</td><td>Answers questions and books viewings on your site, day and night.</td><td>£7.99<small>£14.99 standalone</small></td></tr>
+        <tr><td>Social media</td><td>Three posts a week written and scheduled, replies drafted.</td><td>£19<small>per month</small></td></tr>
+        <tr><td>Paperwork and forms</td><td>Photos and notes turned into finished reports.</td><td>£14.99<small>or £5 per report</small></td></tr>
+        <tr><td>AI staff training</td><td>Get your team comfortable with ChatGPT, Grok and friends.</td><td>£79<small>half-day · £29 follow-up hour</small></td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:28px">Reserve your early-bird price: <a href="mailto:scott@netwrxsolutions.com?subject=Early-bird%20add-ons">scott@netwrxsolutions.com</a> or <a href="tel:07913300361">07913 300361</a>.</p>
+  </div>
+</section>
+
+<section class="bp" id="letready" aria-labelledby="lr-h">
+  <div class="wrap">
+    <div class="plate"><span>Project: <b>LetReady</b></span><span>Status: <b>Live</b></span><span>Principle: <b>Nothing expires unnoticed</b></span></div>
+    <div class="lr">
+      <div>
+        <h2 id="lr-h">Landlord compliance, <span class="y">handled.</span></h2>
+        <p class="lead">LetReady tracks every certificate and deadline for your properties and reminds you before anything runs out.</p>
+        <ul class="ticks">
+          <li>Gas safety certificate reminders</li>
+          <li>EICR electrical reminders</li>
+          <li>Deposit protection reminders</li>
+          <li>Bundles with the phone assistant</li>
+        </ul>
+        <a class="btn btn-y" href="https://getletready.co.uk/" target="_blank" rel="noopener">Open LetReady</a>
+      </div>
+      <div class="board" aria-label="Example LetReady reminder board">
+        <div><span>Gas safety</span><span class="ok">Valid</span></div>
+        <div><span>EICR</span><span class="due">Due 21 days</span></div>
+        <div><span>Deposit</span><span class="ok">Protected</span></div>
+        <div><span>Smoke alarms</span><span class="late">Overdue</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="manifesto" role="note">
+  <div class="wrap">
+    <p>No committee.</p><p>No noise.</p><p class="y">Just solutions.</p>
+  </div>
+</div>
+
+<section id="shop" aria-labelledby="shop-h">
+  <div class="wrap">
+    <div class="plate"><span>Foundry output: <b>Software shop</b></span><span>Status: <b>Shipping</b></span><span>Checkout: <b>Stripe</b></span></div>
+    <h2 id="shop-h">Forged and <span class="y">ready to run.</span></h2>
+    <p class="lead">Live products with real prices. Pay with Stripe and unlock right after checkout.</p>
+
+    <article class="prod" id="email2report">
+      <img src="../assets/email2report.webp" width="640" height="640" loading="lazy" alt="Email2Report: a scheduled email turned into a job report on a laptop and phone">
+      <div>
+        <div class="meta"><span class="label">Automation</span><span class="label">Also: PrefillFromMail</span></div>
+        <h3>Email2Report</h3>
+        <p>Schedule an email in Gmail and get a job report or SafetyCulture inspection with headers filled in, about <strong>24 hours before</strong> the job, in <strong>your own Google account</strong>. No third-party data hosting.</p>
+        <p class="small">Requires SafetyCulture Premium or Enterprise plus Gmail.</p>
+        <div class="buys">
+          <a class="buy" href="https://buy.stripe.com/00w7sL6vk2Nv5lE5Dibo407" target="_blank" rel="noopener"><span class="label">Kit</span><span class="v">£149</span><span class="small">Self-install templates</span></a>
+          <a class="buy hot" href="https://buy.stripe.com/5kQ14n06W9bT5lE9Tybo408" target="_blank" rel="noopener"><span class="label">Guided</span><span class="v">£199</span><span class="small">Setup walkthrough</span></a>
+        </div>
+        <p class="small">After you pay, open the <a href="https://cyberbob4269.github.io/prefillfrommail/" target="_blank" rel="noopener">unlock page</a> with your checkout email, paste the licence key into the setup script, and run on a real scheduled XLS/CSV email.</p>
+      </div>
+    </article>
+
+    <article class="prod" id="xtalk">
+      <img src="../assets/xtalk.webp" width="640" height="640" loading="lazy" alt="xTalk: talk to your computer">
+      <div>
+        <div class="meta"><span class="label">Windows</span><span class="label">Voice to text</span></div>
+        <h3>xTalk</h3>
+        <p>Talk to your computer. Speak and text appears at your cursor, anywhere on Windows. Speech included, no API key needed. Free for <strong>7 days</strong>, same installer for trial and paid.</p>
+        <div class="btns" style="margin:18px 0"><a class="btn btn-o" href="https://github.com/cyberbob4269/xtalk/releases/download/v1.0.3/xTalk-Setup.exe" target="_blank" rel="noopener">Try 7 days free</a></div>
+        <div class="buys">
+          <a class="buy hot" href="https://buy.stripe.com/fZu9ATcTI87PbK26Hmbo401" target="_blank" rel="noopener"><span class="label">UK launch</span><span class="v">£9.99</span></a>
+          <a class="buy" href="https://buy.stripe.com/8x26oHg5U0Fn6pI8Pubo400" target="_blank" rel="noopener"><span class="label">UK full</span><span class="v">£14.99</span></a>
+        </div>
+        <p class="small">After you pay: copy the licence key from the thanks page, then in xTalk choose Gear, Enter licence.</p>
+      </div>
+    </article>
+
+    <article class="prod" id="food-truth">
+      <img src="../assets/foodtruth.webp" width="640" height="692" loading="lazy" alt="Food Truth app on a phone">
+      <div>
+        <div class="meta"><span class="label">UK supermarkets</span><span class="label">Buy / avoid guide</span></div>
+        <h3>Food Truth</h3>
+        <p>A practical UK supermarket buy/avoid guide. Staples like eggs, butter, milk, bread and cheddar are free; unlock the full guide for everything else.</p>
+        <div class="btns" style="margin:18px 0">
+          <a class="btn btn-y" href="https://buy.stripe.com/aFadR95rg2NvdSac1Gbo403" target="_blank" rel="noopener">Buy full guide £3.99</a>
+          <a class="btn btn-o" href="https://cyberbob4269.github.io/food-truth/" target="_blank" rel="noopener">Try free staples</a>
+        </div>
+        <p class="small">Informational guide only, not medical advice.</p>
+      </div>
+    </article>
+
+    <article class="prod" id="stacksweep">
+      <div class="bp" style="aspect-ratio:1/1;border:2px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center" aria-hidden="true">
+        <span class="label">Fixed fee</span>
+        <span style="font-family:var(--cond);font-weight:800;font-size:4rem;line-height:1;color:var(--signal)">£699</span>
+        <span class="label">UK SME clean-up</span>
+      </div>
+      <div>
+        <div class="meta"><span class="label">Consulting</span><span class="label">Teams of 5 to 50</span></div>
+        <h3>StackSweep</h3>
+        <p>Find the software and AI subscriptions you pay for but don't use. We inventory, flag overlaps and hand you a ranked cancel/keep list with a savings estimate, plus a 30 to 45 minute Teams readout. Nothing installed on your PCs.</p>
+        <p class="small">Typically recovers the fee; if not, we credit it toward Netwrx consulting within 60 days.</p>
+        <div class="btns" style="margin-top:18px"><a class="btn btn-y" href="https://buy.stripe.com/28EeVd5rgco54hAfdSbo40c" target="_blank" rel="noopener">Book StackSweep £699</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="bp" id="starlink" aria-labelledby="sl-h">
+  <div class="wrap">
+    <div class="plate"><span>Field work: <b>Starlink installs</b></span><span>Status: <b>Booking visits</b></span></div>
+    <h2 id="sl-h">Starlink, <span class="y">installed and working.</span></h2>
+    <p class="lead">From £40 a month you pay Starlink. We fit the kit you own. Independent installer, not Starlink, SpaceX or Satworks. A booked visit, not a download.</p>
+    <div class="sl-grid" style="margin-top:32px">
+      <a class="spec" href="https://buy.stripe.com/dRm14n7zo4VDdSaaXCbo409" target="_blank" rel="noopener"><span class="label">Wall / fascia</span><span class="price">£299</span><span>Single-storey, short cable, kit on site.</span><span class="btn btn-o" style="margin-top:auto">Buy now</span></a>
+      <a class="spec hot" href="https://buy.stripe.com/cNi3cv1b0co57tM4zebo40a" target="_blank" rel="noopener"><span class="label">Typical house</span><span class="price">£349</span><span>Two-storey or longer run.</span><span class="btn btn-y" style="margin-top:auto">Buy now</span></a>
+      <a class="spec" href="https://buy.stripe.com/eVq14ndXMgEl01kc1Gbo40b" target="_blank" rel="noopener"><span class="label">Roof / complex</span><span class="price">£449</span><span>Roof, pole, chimney, awkward access.</span><span class="btn btn-o" style="margin-top:auto">Buy now</span></a>
+    </div>
+    <p style="margin-top:26px"><a href="https://wa.me/447913300361?text=Starlink%20sky-check">WhatsApp a sky-check</a></p>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div class="plate"><span>Workshop door: <b>Always open</b></span></div>
+    <h2 id="ct-h">Talk to <span class="y">the foundry.</span></h2>
+    <p class="lead">Product support, custom builds or infrastructure quotes. Straight to Scott, no switchboard.</p>
+    <div class="doors">
+      <a href="mailto:scott@netwrxsolutions.com"><span class="label">Email Scott</span>scott@netwrxsolutions.com</a>
+      <a href="tel:07913300361"><span class="label">Phone / WhatsApp</span>07913 300361</a>
+      <a href="mailto:skunk-foundry@mail.grokbot.com"><span class="label">Skunk Foundry</span>skunk-foundry@mail.grokbot.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="tag">Built in the quiet. <span class="y">Delivers in the real world.</span></p>
+    <p>Skunk Foundry is the software studio of NETWRXSOLUTIONS LIMITED, Dundee, UK. © 2026. All rights reserved.</p>
+    <p>Food Truth is an informational guide, not medical advice.</p>
+  </div>
+</footer>
+</body>
+</html>
