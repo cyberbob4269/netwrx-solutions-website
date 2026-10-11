@@ -4,8 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<title>Skunk Foundry | The AI receptionist that never misses a call</title>
-<meta name="description" content="Skunk Foundry is a fast-growing UK AI studio. Our virtual phone assistant runs on SpaceX AI's Grok voice. Plus LetReady landlord reminders, ready-to-run software and Starlink installs.">
+<title>Skunk Foundry | Let's put AI to work in your business</title>
+<meta name="description" content="Skunk Foundry, by NetwrxSolutions, a small UK start-up, sets up AI that works for your business: a virtual phone assistant on Grok voice that never misses a call, plus email, reviews, follow-up and LetReady landlord reminders.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Skunk Foundry | Let's put AI to work in your business">
+<meta property="og:description" content="Skunk Foundry, by NetwrxSolutions, a small UK start-up, sets up AI that works for your business: a virtual phone assistant on Grok voice that never misses a call, plus email, reviews, follow-up and LetReady landlord reminders.">
+<meta property="og:url" content="https://www.netwrxsolutions.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap">
@@ -81,6 +85,7 @@ svg.i{width:1.1em;height:1.1em;flex:none}
 .pill .dot{width:22px;height:22px;border-radius:50%;background:var(--grad);display:grid;place-items:center}
 .pill .dot::after{content:"";width:8px;height:8px;border-radius:50%;background:#06070b}
 .pill strong{font-weight:700}
+.hero-sub{font-family:var(--display);font-weight:700;font-size:clamp(1.55rem,3.3vw,2.75rem);line-height:1.12;letter-spacing:-.02em;margin:-.05em 0 .7em;color:var(--text)}
 .hero .lead{font-size:1.25rem;max-width:44ch}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 28px;margin-top:44px;padding-top:28px;border-top:1px solid var(--line);max-width:620px}
 .stats b{display:block;font-family:var(--display);font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
@@ -196,6 +201,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);f
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px}
 footer p{margin:0}
 
+@media (min-width:961px){.visual .portrait{transform:translateY(-100px)}.portrait{overflow:hidden;border-radius:28px}.portrait img{transform:scale(1.15);transform-origin:12% 30%}}
 @media (max-width:1100px){.tiles{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:960px){
   .hero-grid,.lr-grid{grid-template-columns:1fr}
@@ -273,8 +279,9 @@ footer p{margin:0}
   <div class="wrap hero-grid">
     <div>
       <span class="pill"><span class="dot" aria-hidden="true"></span>Powered by <strong>SpaceX AI</strong> · Grok voice</span>
-      <h1 id="hero-h">The AI receptionist that <span class="grad">never misses a call.</span></h1>
-      <p class="lead">Skunk Foundry is a fast-growing UK AI studio. Our virtual assistant answers your phone in a natural voice, books appointments and texts you who called and why, within seconds.</p>
+      <h1 id="hero-h">Let's put AI to work <span class="grad">in your business.</span></h1>
+      <p class="hero-sub">The AI receptionist that <span class="grad">never misses a call.</span></p>
+      <p class="lead">Skunk Foundry is a small UK start-up. Our virtual assistant answers your phone in a natural voice, books appointments and texts you who called and why, within seconds.</p>
       <div class="btns">
         <a class="btn btn-white" href="tel:07888867893"><svg class="i"><use href="#i-phone"/></svg><span>Call the live demo: <span style="white-space:nowrap">07888 867893</span></span></a>
         <a class="btn btn-line" href="#plans">See plans<svg class="i"><use href="#i-arrow"/></svg></a>
@@ -304,7 +311,7 @@ footer p{margin:0}
     <span><b>Voice AI</b> by SpaceX AI (Grok)</span>
     <span><b>Secure payments</b> via Stripe</span>
     <span><b>UK numbers</b>, mobile or local</span>
-    <span><b>Built in</b> Dundee, Scotland</span>
+    <span><b>Built in</b> the UK</span>
   </div>
 </div>
 
@@ -328,7 +335,7 @@ footer p{margin:0}
         <span class="pr">£14.99<small> /month</small></span>
         <span class="free">First 30 days free</span>
         <ul><li>Answers your calls 24/7</li><li>Messages texted and emailed</li><li>Mobile or local number</li></ul>
-        <a class="btn btn-line" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Personal%20free%20trial">Start free trial</a>
+        <a class="btn btn-line" href="https://buy.stripe.com/7sY14n5rgewd9BU5Dibo40e" target="_blank" rel="noopener">Start 30 days free</a>
       </article>
       <article class="card tier feat" style="position:relative">
         <span class="badge">Most popular</span>
@@ -336,16 +343,17 @@ footer p{margin:0}
         <span class="pr">£29<small> /month</small></span>
         <span class="free">First 30 days free</span>
         <ul><li>Everything in Personal</li><li>Knows your business and FAQs</li><li>Urgent calls flagged at once</li></ul>
-        <a class="btn btn-white" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Business%20free%20trial">Start free trial</a>
+        <a class="btn btn-white" href="https://buy.stripe.com/bJefZh8Ds1Jrg0ic1Gbo40f" target="_blank" rel="noopener">Start 30 days free</a>
       </article>
       <article class="card tier">
         <span class="nm">Team</span>
         <span class="pr">£49<small> /month</small></span>
         <span class="free">First 30 days free</span>
         <ul><li>Everything in Business</li><li>Routes messages to the right person</li><li>For offices and agents</li></ul>
-        <a class="btn btn-line" href="mailto:scott@netwrxsolutions.com?subject=Virtual%20Assistant%20-%20Team%20free%20trial">Start free trial</a>
+        <a class="btn btn-line" href="https://buy.stripe.com/aFacN5cTIds97tM7Lqbo40g" target="_blank" rel="noopener">Start 30 days free</a>
       </article>
     </div>
+    <p class="muted small" style="margin-top:22px">Card taken securely by Stripe. Nothing to pay for 30 days, cancel any time before and you won't be charged. Early-bird prices locked in for your first 12 months.</p>
   </div>
 </section>
 
@@ -498,7 +506,7 @@ footer p{margin:0}
 
 <footer>
   <div class="wrap">
-    <p>Skunk Foundry is the AI studio of NETWRXSOLUTIONS LIMITED, Dundee, UK. © 2026.</p>
+    <p>Skunk Foundry is the AI studio of NETWRXSOLUTIONS LIMITED, UK. © 2026.</p>
     <p>Voice assistant powered by Grok from SpaceX AI. Skunk Foundry is independent and not affiliated with SpaceX. Food Truth is an informational guide, not medical advice.</p>
   </div>
 </footer>
