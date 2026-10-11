@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Site styles that previously lived next to the Tailwind Play CDN. */
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.section-header {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.service-card,
+.product-card,
+.project-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover,
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #1d9bf0;
+}
+
+.hero-bg {
+  background: #000000;
+}
+
+.accent {
+  color: #1d9bf0;
+}
+
+.x-card {
+  background-color: #16181c;
+  border-color: #2f3336;
+}
+
+.x-card:hover {
+  border-color: #1d9bf0;
+}
+
+.buy-btn {
+  transition: all 0.2s ease;
+}
+
+.buy-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -8px rgb(29 155 240 / 0.45);
+}
+
+.price-tier {
+  border: 1px solid #2f3336;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.price-tier:hover {
+  border-color: #1d9bf0;
+  background-color: rgb(29 155 240 / 0.05);
+}
+
+.price-tier.featured {
+  border-color: #1d9bf0;
+  background-color: rgb(29 155 240 / 0.08);
+}
+
+.essay-body p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+  color: #cbd5e1;
+}
+
+.essay-body h2 {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+#menu-toggle:focus-visible,
+.mobile-nav-link:focus-visible {
+  outline: 2px solid #1d9bf0;
+  outline-offset: 2px;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus-visible {
+  color: #ffffff;
+  background: #1e293b;
+}
+
+.mobile-nav-cta {
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  background: #0ea5e9;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.mobile-nav-cta:hover,
+.mobile-nav-cta:focus-visible {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+@media (min-width: 1024px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+/* Phones: small text links need a real ~44px box, not just a larger invisible hit area. */
+@media (max-width: 1023px) {
+  a.tap-target {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
